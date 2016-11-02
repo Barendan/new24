@@ -1,0 +1,222 @@
+
+@media (min-width: 1024px) {
+/*    :root {
+        font-size: 16px;
+    }*/
+    body {
+        font-size: .78125vw;
+    }
+    h1 {
+        margin-bottom: 1.30208vw;
+        font-size: 3.125vw;
+    }
+    h1 {
+        margin: .66667em 0;
+    }
+    h2 {
+        margin-bottom: .78125vw;
+        font-size: 1.92708vw;
+    }
+    h1+hr {
+        width: 34px;
+        min-height: 5px;
+        height: .36458vw;
+        margin-bottom: 1.66667vw;
+    }
+    h2+hr {
+        width:26px;
+        min-height: 3px;
+        height: .26042vw;
+        margin-bottom: .9375vw
+    }
+    p {
+        margin-bottom: 3.125vw;
+    }
+
+
+
+    #logo-wrapper {
+        top: 1.82292vw;
+        left: 2.08333vw;
+        width: 130px;
+        height: 55px;
+    }
+    .page {
+        max-width:1210px;
+        max-width: 63.0209vw;
+        width: 63.02083vw;
+    }
+    .page .copyright-container {
+        bottom: 1.875vw;
+        left: 2.1875vw;
+    }
+    .c2Action {
+        display: block;
+        right: 2.1875vw;
+        bottom: 1.97917vw;
+        z-index: 99;
+    }
+    .c2Action-link-wrapper .large {
+        left:0!important;
+        right: 0!important;
+        width: 100px
+    }
+    .button-c2Action.large {
+        width: 15.20833vw;
+        height: 6.45833vw;
+    }
+    .button-c2Action.large .icon {
+        width: 5.20833vw;
+    }
+    .button-c2Action.large .label {
+        font-size: .98958vw;
+    }
+
+
+
+    #feature-page {
+        padding-top: 2.8125vw;
+        padding-bottom: 0
+    }
+    #feature-page p {
+        font-size: .78125vw
+    }
+    .section-inner.left {
+        margin: 0 auto;
+        float: left;
+    }
+    .section-inner.left.description {
+        width: 21.875vw;
+        text-align: left;
+    }
+    .section-inner.left.description p {
+        line-height: 2.2;
+    }
+    .section-inner.right.description {
+        width:26.66667vw;
+        text-align: right;
+        float:none;
+    }
+    .section-inner.right.description p {
+        line-height: 2.2
+    }
+    .section-inner.right.showcase {
+        width: 36.04167vw;
+    }
+    .section-inner.left.showcase {
+        width: 36.04167vw
+    }
+
+
+    .heading span {
+        letter-spacing: 0;
+    }
+    #feature-page #section-1-1 {
+        top: 7.9375vw;
+    }
+    .bottle {
+        top: 4vw;
+        right: -6.64583vw;
+        width: 33.13542vw;
+    }
+    #feature-page #section-2 {
+        margin-bottom: 7.10417vw
+    }
+    #feature-page #section-2 .description {
+        max-width: 49%;
+        height: 70px;
+    }
+    #feature-page #section-3 {
+        margin-bottom: 40px;
+    }
+    #feature-page #wavey {
+        left: -19vw;
+        top: 100%;
+        width: 101vw;
+        -webkit-clip-path: inset(0 0 0 100%);
+        -webkit-transition: all 1.8s cubic-bezier(.215,.61,.355,1);
+        transition: all 1.8s cubic-bezier(.215,.61,.355,1);
+    }
+    .heading-pre {
+        font-size:.83333vw;
+    }
+}
+
+@media (min-width: 414px) {
+    .copyright-container {
+        font-size: 9px;
+    }
+    .main-nav-container {
+        width: 282px;
+        padding: 38px 50px 28px 55px;
+    }
+    .hamburger {
+        top: 2.5vw;
+        right: 2.60417vw;
+    }
+    .navigation-footer {
+        margin: 0 -17px
+    }
+    .navigation-footer .wrapper a {
+        font-size:9px
+    }
+    .main-nav {
+        margin-top: 0px
+    }
+    .main-nav li {
+        margin-bottom:20px
+    }
+    .main-nav .nav--hover:after {
+        height:2px;
+        min-height: auto
+    }
+    .main-nav .site-links {
+        margin-bottom: 70px
+    }
+    .main-nav .site-links a {
+        padding-bottom:2px;
+        font-size: 23px
+    }
+    .main-nav .site-links a span {
+        font-size:14px
+    }
+    .main-nav .store-downloads a {
+        font-size:14px
+    }
+    .navigation-footer {
+        margin: 0 -17px
+    }
+    .button-social {
+        width:42px;
+        height: 42px
+    }
+}
+
+@media (max-width: 320px) {
+    #feature-page {
+        padding-bottom: 100px!important
+    }
+}
+
+
+
+@media (max-height: 700px) {
+    .main-nav {
+        margin-top:0px
+    }
+    .main-nav li {
+        margin-bottom:10px
+    }
+    .main-nav .site-links {
+        margin-bottom:20px
+    }
+    .page-section {
+        /*height: 500px;*/
+    }
+}
+
+@media (max-height: 1024px) {
+    .page-section {
+        /*height: 800px;*/
+    }
+}
