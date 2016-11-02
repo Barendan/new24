@@ -71,6 +71,9 @@
     .button-c2Action.large .label {
         font-size: .98958vw;
     }
+    .button-c2Action.large .label strong {
+        font-size:1.45833vw
+    }
 
 
 

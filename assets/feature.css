@@ -252,11 +252,6 @@ head {
 	opacity: 1.0;
 }
 
-
-
-/*==========================================*/
-		/*Third Section*/
-
 #feature-page .wave {
     position: absolute;
     max-width: none;
@@ -281,9 +276,8 @@ head {
 }
 
 
-
-
-
+/*==========================================*/
+		/*Third Section*/
 
 
 #feature-page #section-3 {
@@ -315,33 +309,36 @@ head {
 	left: -17vw;
 	width: 110%;
 }
-
+.claim-descriptions img {
+	width: 20%;
+	transform: skew(0deg,30deg);
+}
 .sticker {
 	position: absolute;
 }
 .sticker:hover {
-	transform: scale(2,2);
+	/*transform: scale(2,2);*/
 	z-index: 10;
 }
 .cv {
-	top: 306px;
-	left: 156px;
+	top: 40vh;
+	left: 50vw;
 }
 .cg {
 	top: 291px;
 	left: 193px;
 }
 .cu {
-	top: 282px;
-	left: 240px;
+	top: 1vh;
+	left: 50vw;
 }
 .cs {
-	top: 273px;
-	left: 265px;
+	top: 8vh;
+	left: 65vw;
 }
 .cc {
-	top: 263px;
-	left: 297px;
+	top: 40vh;
+	left: 65vw;
 }
 .cn {
 	top: 254px;

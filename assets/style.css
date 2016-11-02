@@ -137,6 +137,26 @@ a {
 }
 .copyright { color: #2d2b51; }
 
+a.link--hover:hover {
+    text-decoration: none
+}
+a.link--hover {
+    position: relative
+}
+a.link--hover:hover:after {
+    width: 100%
+}
+a.link--hover:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #2d2b51;
+    -webkit-transition: width .36s cubic-bezier(.075,.82,.165,1);
+    transition: width .36s cubic-bezier(.075,.82,.165,1)
+}
 
 /*=================================*/
 
@@ -211,12 +231,19 @@ a {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.button-c2Action.large .label strong {
+    font-size: 2.96296vw
+}
 .wcart {
     position: relative;
     top: 20px;
     left: 10px;
     background-position: 68% 45%;
     background-size: 66%;
+}
+.icon-wfoods {
+    background: url(wfoods.png) center no-repeat;
+    background-size: 85%;
 }
 
 /*==============================*/
