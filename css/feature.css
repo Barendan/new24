@@ -88,7 +88,7 @@ head {
     right: 25vw;
     height: 40vh;
     width: 15vw;
-	background: url(eve/watermelon.png);
+	background: url(../assets/watermelon.png);
     background-repeat: no-repeat;
 }
 #rp {
@@ -96,7 +96,7 @@ head {
     right: 38vw;
     width: 120px;
     height: 78px;
-	background: url(eve/raspberry.png);
+	background: url(../assets/raspberry.png);
     background-repeat: no-repeat;
 	z-index: 12;
 }
@@ -105,7 +105,7 @@ head {
     right: 20vw;
     width: 281px;
     height: 154px;
-	background: url(eve/grapes.png);
+	background: url(../assets/grapes.png);
     background-repeat: no-repeat;
 	z-index: 11;
 }
@@ -114,7 +114,7 @@ head {
     left: 25vw;
     height: 30vh;    
     width: 30vw;
-	background: url(eve/coconut.png);
+	background: url(../assets/coconut.png);
     background-repeat: no-repeat;
 	z-index: 10;
 }
@@ -123,7 +123,7 @@ head {
     left: 34vw;
     width: 25vw;
     height: 30vh;
-	background: url(eve/pineapple.png);
+	background: url(../assets/pineapple.png);
     background-repeat: no-repeat;
 	z-index: 9;
 }
@@ -147,7 +147,7 @@ head {
 	width: 100%;
 }
 .thePour {
-	background: url(pour3.png);
+	background: url(../assets/pour3.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: 0%;
@@ -238,19 +238,7 @@ head {
 	top: 7px;
 	width: 25px !important;
 }
-.fo {
-	position: absolute;
-	top: 200px;
-	left: 940px;
-	/*transform: rotate(60deg);*/
-	width: 100px;
-	height: 50px;
-	opacity: .8;
-}
-.fo:hover {
-	left: 915px;
-	opacity: 1.0;
-}
+
 
 #feature-page .wave {
     position: absolute;
