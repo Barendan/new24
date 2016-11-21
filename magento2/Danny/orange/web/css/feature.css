@@ -88,7 +88,7 @@ head {
     right: 25vw;
     height: 40vh;
     width: 15vw;
-	background: url(../assets/watermelon.png);
+	background: url(../images/watermelon.png);
     background-repeat: no-repeat;
 }
 #rp {
@@ -96,7 +96,7 @@ head {
     right: 38vw;
     width: 120px;
     height: 78px;
-	background: url(../assets/raspberry.png);
+	background: url(../images/raspberry.png);
     background-repeat: no-repeat;
 	z-index: 12;
 }
@@ -105,7 +105,7 @@ head {
     right: 20vw;
     width: 281px;
     height: 154px;
-	background: url(../assets/grapes.png);
+	background: url(../images/grapes.png);
     background-repeat: no-repeat;
 	z-index: 11;
 }
@@ -114,7 +114,7 @@ head {
     left: 25vw;
     height: 30vh;    
     width: 30vw;
-	background: url(../assets/coconut.png);
+	background: url(../images/coconut.png);
     background-repeat: no-repeat;
 	z-index: 10;
 }
@@ -123,7 +123,7 @@ head {
     left: 34vw;
     width: 25vw;
     height: 30vh;
-	background: url(../assets/pineapple.png);
+	background: url(../images/pineapple.png);
     background-repeat: no-repeat;
 	z-index: 9;
 }
@@ -147,7 +147,7 @@ head {
 	width: 100%;
 }
 .thePour {
-	background: url(../assets/pour3.png);
+	background: url(../images/pour3.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: 0%;

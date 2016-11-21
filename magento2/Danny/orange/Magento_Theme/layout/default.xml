@@ -1,16 +1,8 @@
 <?xml version="1.0"?>
-<!--
-/**
- * Copyright © 2015 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
+
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="page-background">
-            
-        </referenceContainer>
-        
+
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo.png</argument>
@@ -18,26 +10,94 @@
                 <argument name="logo_img_height" xsi:type="string">auto</argument>
             </arguments>
         </referenceBlock>
-        
+
+
+        <referenceContainer name="header.container">
+            <container name="main-content" label="Main Content Section" htmlTag="div" htmlClass="page" htmlId="feature-page">
+                <block class="Magento\Cms\Block\Block" name="page-background">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">page-background</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="fixed-copyright">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">fixed-copyright</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="fixed-buttons">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">fixed-buttons</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="first-text">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">first-text</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="first-display">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">first-display</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="ingre">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">ingre</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Cms\Block\Block" name="claims">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">claims</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceContainer name="side-menu">
+            <container name="nav-container" label="Nav Container" htmlTag="div" htmlClass="main-nav-container">
+                <block class="Magento\Cms\Block\Block" name="hamburger">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">hamburger</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Cms\Block\Block" name="right-menu">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">right-menu</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+
         <!-- <referenceBlock name="catalog.topnav"  remove="true"/> -->
 
-        <move element="navigation.sections" name="ves.topmenu" destination="ves_header" as="catalog.topnav" remove="true"/>
+        <!-- <move element="navigation.sections" name="ves.topmenu" destination="ves_header" as="catalog.topnav" remove="true"/> -->
 
-        <move element="skip_to_content" as="skipToContent" destination="ves_header" remove="true"/>
         <move element="minicart" destination="ves_header" remove="true"/>
-        <move element="top.search" destination="ves_header" remove="true"/>
-        <!-- <move element="logo" as="logo" destination="ves_header"/> -->
         <move element="top.links" as="toplinks" destination="ves_header" remove="true"/>
 
-        <referenceContainer name="header.panel.wrapper" remove="true"/>
+        <referenceContainer name="header.panel.wrapper"/>
 
-        <referenceBlock name="report.bugs" remove="true"/>
         <!-- Footer section showing copyright -->
         <referenceContainer name="footer-container" remove="true"/>
-        <!-- Modals-wrapper popup to sign -->
-        <referenceContainer name="after.body.start" remove="true"/>
+            <referenceBlock name="report.bugs" remove="true"/>
         <!-- Breadcrumbs section showing Home -> 24 Hour Health -->
         <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs" remove="true"/>
+
+
+        <!-- ====== Might Need ===== -->
+        <!-- Modals-wrapper popup to sign -->
+        <referenceContainer name="after.body.start" remove="true"/>
+        <move element="skip_to_content" as="skipToContent" remove="true"/>
+
+
+        <!-- ======= DONT NEED ====== -->
+        <move element="top.search" destination="ves_header" remove="true"/>
 
     </body>
 </page>

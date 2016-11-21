@@ -7,7 +7,7 @@ Media queries to go along with this file found in media.css
 */
 
 body {
-    background-color: #fafafa;
+    background-color: #fea;
     color: #9296ab;
     margin: 0;
 }
@@ -234,16 +234,14 @@ a.link--hover:after {
 .button-c2Action.large .label strong {
     font-size: 2.96296vw
 }
-.wcart {
+.wcart, .wfoods {
     position: relative;
     top: 20px;
     left: 10px;
-    background-position: 68% 45%;
-    background-size: 66%;
 }
-.icon-wfoods {
-    background: url(../assets/wfoods.png) center no-repeat;
-    background-size: 85%;
+.wcart img, .wfoods img {
+    width: 50px;
+    height: 50px;
 }
 
 /*==============================*/
@@ -420,21 +418,15 @@ a.link--hover:after {
 
 
 
-.overlay {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    height: 0vh;
-    background-color: rgba(255,255,255,.9)
-    z-index: 10000;
-}
 .navigation {
     position: fixed;
     z-index: 10000;
 }
 .navigation .navigation-overlay {
-    display: none
+    display: none;
+}
+.open .navigation-overlay {
+    display: block;
 }
 .navigation-overlay {
     position: fixed;
@@ -442,15 +434,15 @@ a.link--hover:after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,.9)
+    background-color: rgba(255,255,255,.9);
 }
 .navigation.open .main-nav-container {
-    box-shadow: 0 -2px 4px 2px rgba(0,0,0,.12)
+    box-shadow: 0 -2px 4px 2px rgba(0,0,0,.12);
 }
 .navigation-footer {
     position: absolute;
     bottom: 20px;
-    margin: 0 -3.7037vw
+    margin: 0 -3.7037vw;
 }
 .navigation-footer .wrapper .slash {
     font-size: 10px;
@@ -487,9 +479,6 @@ a.link--hover:after {
 .navigation-footer .social-buttons li:hover {
     z-index: 1
 }
-.navigation.open .main-nav-container {
-    box-shadow: 0 -2px 4px 2px rgba(0,0,0,.12)
-}
 .navigation-footer .wrapper,.section-inner.center,time {
     text-align: center
 }
@@ -499,7 +488,7 @@ a.link--hover:after {
 .main-nav-container {
     box-sizing: border-box;
     position: fixed;
-    top: 0;
+    top: -100%;
     right: 0;
     width: 59.72222vw;
     height: 100%;
@@ -547,7 +536,7 @@ a.link--hover:after {
     width: 100%;
     height: .55556vw;
     min-height: 3px;
-    background-color: #0077ed;
+    background-color: orange;
     opacity: 0;
     -webkit-transition: right .32s cubic-bezier(.165,.84,.44,1),opacity .32s cubic-bezier(.165,.84,.44,1);
     transition: right .32s cubic-bezier(.165,.84,.44,1),opacity .32s cubic-bezier(.165,.84,.44,1)
