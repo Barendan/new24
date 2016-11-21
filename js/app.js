@@ -93,7 +93,7 @@ $(".hamburger").click( function () {
     TweenMax.staggerFrom(menuItems, 1, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut}, 0.1);
     TweenMax.staggerFrom(".social-buttons .button", 2, {scale:0.25, opacity:0, delay:1.0, ease:Elastic.easeOut}, 0.1);
 
-    $('.overlay').animate({ height: "+=100vh"}, 400);
+    $('.navigation-overlay').animate({ height: "+=100vh"}, 400);
   }
   else {    
     hb.removeClass("is-active").addClass("is-inactive");
