@@ -7,13 +7,19 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
+		<remove src="mage/calendar.css"/>
         <css src="css/style.css"/>
         <css src="css/feature.css"/>
         <css src="css/media.css"/>
 
         <meta name="format-detection" content="telephone=no"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-
+        
+        <script src="requirejs/require.js"/>
+        
 
     </head>
+    <body>
+		<script src="js/app.js"></script>
+	</body>
 </page>

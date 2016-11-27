@@ -1,5 +1,11 @@
-Back up for project New24
-Saved me the first time around when my computer got fried.
+New24 is a remake of old24.<br>
+For default website built from scratch, use main folder.<br>
+For Magento compatible version of same code (and improved), look into magento2 folder.<br>
+NOTE: All necessary files for Magento version are strictly located in that folder. <br><br>
 
-Old24 can be found in personal Projects folder.
+-Fix Menu<br>
+-Create additional Pages<br>
+
+
+
 

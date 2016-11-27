@@ -1,0 +1,58 @@
+The basic view of all Magento storefront pages is defined in two page configuration layout files located in Magento_Theme module:
+
+gksu gedit code/Magento/Theme/view/frontend/layout/default_head_blocks.xml
+	includes scripts, images, and meta data included in pages' head section
+	defines page configuration
+
+gksu gedit code/Magento/Theme/view/frontend/layout/default.xml
+	defines page layout
+
+
+From the magento2/app Directory:
+
+./design/frontend/Magento/blank/Magento_Theme/layout/default_head_blocks.xml
+./design/frontend/Magento/luma/Magento_Theme/layout/default_head_blocks.xml
+./code/Magento/Theme/view/frontend/layout/default_head_blocks.xml
+
+
+Extend styles:
+/Vendor_Module/layout/default_head_blocks.xml
+Overwrite styles:
+/Vendor_Module/layout/override/base
+/Vendor_Module/layout/override/<parent_theme>
+Override theme templates, default module templates, and all your custom templates go:
+/Vendor_Module/templates
+
+Base Layouts: <module_dir>/view/frontend/layout or page_layout
+Theme Layouts: <theme_dir>/orange/layout
+
+
+app/etc/config.php
+collects all layout files from modules; order determined by modules order in module list
+
+
+TEMPLATES
+
+app/code/
+contains all .phtml files (templates)
+
+gksu gedit app/code/Magento/Theme/view/base/templates/root.phtml
+	root template for all storefront pages in the application
+	unlike other templates, it contains doctype specification and contributes to head and body 		sections of all pages rendered by Magento application.
+
+
+
+
+
+/var/www/magento2/app/code/Magento/Ui/view/base/web/js/modal/modal.js
+/var/www/magento2/lib/web/css/docs/source/_components.less
+/var/www/magento2/lib/web/css/docs/components.html
+
+
+
+
+
+
+
+
+
