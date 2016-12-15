@@ -4,15 +4,14 @@
         font-size: 16px;
     }*/
     body {
-        font-size: .78125vw;
+        /*font-size: 1vw;*/
     }
     h1 {
         margin-bottom: 1.30208vw;
         font-size: 3.125vw;
+        /*margin: .66667em 0;*/
     }
-    h1 {
-        margin: .66667em 0;
-    }
+    
     h2 {
         margin-bottom: .78125vw;
         font-size: 1.92708vw;
@@ -30,8 +29,12 @@
         margin-bottom: .9375vw
     }
     p {
+        margin-bottom: 5px;
+    }
+    .feature-page p {
         margin-bottom: 3.125vw;
     }
+
 
 
 

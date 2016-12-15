@@ -1,6 +1,17 @@
 <?xml version="1.0"?>
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" src_type="url" /> -->
+        <!-- <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js" src_type="url" /> -->
+
+
+        <!-- ============From Example Ingredients========= -->
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" src_type="url"/>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js" src_type="url"/>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" src_type="url"/> -->
+        <script src="js/app.js"/>
+    </head>
     <body>
         <referenceContainer name="header.container">
             <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
@@ -67,12 +78,21 @@
                     <block class="Magento\Framework\View\Element\Template" name="sec1-display" template="Magento_Theme::custom/sec1_display.phtml" />
                 </referenceContainer>
                 <referenceContainer name="section-2">
-                <block class="Magento\Framework\View\Element\Template" name="sec-ingre" template="Magento_Theme::custom/sec_ingre.phtml" />
+                    <block class="Magento\Framework\View\Element\Template" name="sec-ingre" template="Magento_Theme::custom/sec_ingre.phtml" />
                 </referenceContainer>
                 <referenceContainer name="section-3"> 
-                <block class="Magento\Framework\View\Element\Template" name="sec-claims" template="Magento_Theme::custom/sec_claims.phtml" />
+                    <block class="Magento\Framework\View\Element\Template" name="sec-claims" template="Magento_Theme::custom/sec_claims.phtml" />
                 </referenceContainer>
             </referenceContainer>
+
+            <referenceContainer name="blog.page">
+                <block class="Magento\Framework\View\Element\Template" name="blog" template="Magento_Theme::custom/blog.phtml" />
+            </referenceContainer>
+
+            <referenceContainer name="about.page">
+                <block class="Magento\Framework\View\Element\Template" name="about" template="Magento_Theme::custom/about.phtml" />
+            </referenceContainer>
+
         </referenceContainer>
 
         <referenceContainer name="page.top">

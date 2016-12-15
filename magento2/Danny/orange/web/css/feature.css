@@ -1,8 +1,9 @@
 
 h1 {
-    margin: .66667em 0;
+    margin-top: 0;
     margin-bottom: 3.24074vw;
     font-size: 8.05556vw;
+    text-align: center;
 }
 hr {
     height: 0;
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #2d2b51;
     text-transform: uppercase;
 }
-p {
+.feature-page p {
     margin-top: 0;
     margin-bottom: 11.11111vw;
     line-height: 1.8;

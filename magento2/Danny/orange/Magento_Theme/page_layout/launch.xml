@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="basic"/>
+
+    <!-- TAKEN FROM BASE EMPTY.XML -->
+        <referenceContainer name="page.wrapper">
+            <container name="feature.page" as="feature_page" label="Feature Page" htmlTag="div" htmlClass="page" htmlId="feature-page" after="global.notices">
+                <container name="section-1" label="Section 1" htmlTag="section" htmlClass="page-section" htmlId="section-1"/>
+                <container name="section-2" label="Section 2" htmlTag="section" htmlClass="page-section" htmlId="section-2"/>
+                <container name="section-3" label="Section 3" htmlTag="section" htmlClass="page-section" htmlId="section-3"/> 
+            </container>
+            <referenceContainer name="main.content" remove="true" />
+        </referenceContainer>
+
+        <!-- <container name="ves-slideshow" as="ves-slideshow" label="Page Slideshow Container" htmlTag="div" htmlClass="ves-slideshow clearfix" before="main.content"/> -->
+
+        <!-- <container name="ves-showcase" as="ves-showcase" label="Page Showcase Container" htmlTag="div" htmlClass="ves-showcase page-main clearfix" after="ves-slideshow"/> -->
+
+        <!-- <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="div" htmlClass="page-footer" /> -->
+
+</layout>
