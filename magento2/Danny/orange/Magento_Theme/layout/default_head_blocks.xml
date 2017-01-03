@@ -9,22 +9,26 @@
     <head>
 
 		<css src="mage/calendar.css"/>
-        <!-- <css src="css/styles-m.css" /> -->
         <css src="css/styles-l.css" media="screen and (min-width: 768px)" />
-        <css src="css/print.css" media="print" />
+        <!-- <css src="css/styles-m.css" /> -->
+        <!-- <css src="css/print.css" media="print" /> -->
+        <css src="css/basic.css"/>
+        <css src="css/custom-menu.css"/>
 
         <css src="css/abc.css"/>
-        <css src="css/basic.css"/>
-        <css src="css/feature.css"/>
-        <css src="css/ingre.css"/>
         <css src="css/media.css"/>
+
+        <!-- ADDED INTO LAYOUT UPDATE XML IN CMS -->
+        <!-- <css src="css/custom-home.css"/> -->
+        <!-- <css src="css/ingre.css"/> -->
+        <!-- ADDED INTO CONTACT_INDEX_INDEX.XML -->
+        <!-- <css src="css/contact.css"/> -->
 
         <meta name="format-detection" content="telephone=no"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         
         <script src="requirejs/require.js"/>
         
-
     </head>
     
 </page>

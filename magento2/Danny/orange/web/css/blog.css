@@ -1,0 +1,262 @@
+/*============================================================================*/
+						/*======== BLOG SECTION=========*/
+
+
+#blog-page h3 {
+	text-align: center;
+	font-size: 28px;
+}
+#blog-page p {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/*==========*/
+
+.blogbox-large {
+	display: inline-block;
+	background-color: white;
+	width: 980px;
+	height: 355px;
+	padding: 10px;
+	margin-bottom: 5%;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,.2);
+	overflow: hidden;
+}
+.display-l {
+	float: left;
+	background-image: url(../images/demo/blog.jpg);
+	background-size: cover;
+	width: 65%;
+	height: 350px;
+	border: black 2px solid;
+}
+.desc-l {
+	float: right;
+	width: 32%;
+	height: 350px;
+	padding: 5px;
+	/*border: black 2px solid;*/
+	overflow: hidden;
+}
+
+.readmo {
+	color: black;
+	opacity: 0.8;
+	text-align: center;
+	/*padding: 0 30%;*/
+}
+.readmo:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	opacity: 1.0;
+}
+/*============*/
+
+.row {
+	display: inline-block;
+	margin-left: 40px;
+	/*margin-right: 20px;*/
+	margin-bottom: 50px;
+    width: 980px;
+    height: 300px;
+} 
+.blogbox {
+	display: inline-block;
+	width: 280px;
+	height: 270px;
+	padding: 5px;
+	border: 1px black solid;
+	background-color: white;
+    box-shadow: 0 0 19px 3px rgba(0,0,0,.4);
+    overflow: hidden;
+}
+.blogbox:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+.blogbox h4 {
+	text-align: center;
+	color: white;
+	text-transform: capitalize;
+	font-size: 22px;
+	font-weight: bold;
+	opacity: 1.0;
+}
+.midbox {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+.display {
+	/*float: left;*/
+	/*border: black 2px solid;*/
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.desc {
+	/*position: relative;*/
+	/*top: -100;*/
+	/*display: none;*/
+	/*float: right;*/
+	background-color: black;
+	opacity: 0.5;
+	padding: 2% 2% 0 2%;
+
+	/*width: 280px;*/
+	height: 40px;
+	/*border: black 2px solid;*/
+	overflow: hidden;
+}
+.desc-ctrl {
+	position: relative;
+	top: 230px;
+	/*display: none;*/
+	background-color: black;
+	opacity: 0.5;
+	padding: 2% 2% 0 2%;
+
+	height: 35px;
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+.desc-shft {
+	/*display: none;*/
+	background-color: black;
+	opacity: 0.5;
+	padding: 2% 2% 0 2%;
+
+	height: 265px;
+	overflow: hidden;
+}
+.desc-shft h4 {
+	text-decoration: underline;
+}
+.desc-shft p {
+	padding: 0 15px 15px 15px;
+}
+
+.desc-alt {
+	/*display: none;*/
+	position: relative;
+	top: -40px;
+	padding: 2% 2% 0 2%;
+	/*width: 95%;*/
+	height: 40px;
+	/*border: black 2px solid;*/
+	overflow: hidden;
+}
+.shade {
+	background-color: black;
+	opacity: 0.7;
+	height: 40px;
+	overflow: hidden;
+}
+
+.desc-alt2 {
+	/*display: none;*/
+	position: relative;
+	top: -80px;
+	padding: 2% 2% 0 2%;
+	/*width: 95%;*/
+	height: 40px;
+	/*border: black 2px solid;*/
+	overflow: hidden;
+}
+.shade2 {
+	position: relative;
+	top: -40px;
+	background-color: black;
+	opacity: 0.7;
+	height: 40px;
+	overflow: hidden;
+}
+
+
+/*==============*/
+.row2 {
+	display: inline-block;
+	margin-left: 40px;
+	/*margin-right: 20px;*/
+	margin-bottom: 50px;
+    width: 980px;
+    height: 500px;
+}
+
+.blogbox2 {
+	display: inline-block;
+	width: 280px;
+	height: 460px;
+	padding: 5px;
+	border: 1px black solid;
+	background-color: white;
+    box-shadow: 0 0 19px 3px rgba(0,0,0,.4);
+    overflow: hidden;
+}
+
+.border {
+	border: 1px white solid;
+}
+
+.display1 {
+	/*float: left;*/
+	/*border: black 2px solid;*/
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.desc1 {
+	position: relative;
+	top: 300px;
+	color: black !important;
+	padding: 10px;
+}
+.desc1 p {
+	font-size: 12px !important;
+}
+
+
+.b1 {
+	background-image: url(../images/demo/blog1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.b2 {
+	background-image: url(../images/demo/blog2.jpg);
+	background-size: 290px 300px;
+	/*background-position: center;*/
+	background-repeat: no-repeat;
+}
+.b3 {
+	background-image: url(../images/demo/blog3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.b4 {
+	background-image: url(../images/demo/blog4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.b5 {
+	background-image: url(../images/demo/blog5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.b6 {
+	background-image: url(../images/demo/blog6.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
+.soon {
+	background-image: url(../images/demo/soon.png);
+	background-size: 350px 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}

@@ -6,8 +6,6 @@
 var config = {
     map: {
         "*": {
-            "scrollreveal":           "js/scrollreveal",
-            "tweenmax":               "js/TweenMax",
             "rowBuilder":             "Magento_Theme/js/row-builder",
             "toggleAdvanced":         "mage/toggle",
             "translateInline":        "mage/translate-inline",

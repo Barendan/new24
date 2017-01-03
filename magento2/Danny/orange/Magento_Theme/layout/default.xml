@@ -2,15 +2,11 @@
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" src_type="url" /> -->
-        <!-- <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js" src_type="url" /> -->
 
-
-        <!-- ============From Example Ingredients========= -->
-        <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" src_type="url"/>
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js" src_type="url"/>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" src_type="url"/> -->
-        <script src="js/app.js"/>
+        <script src="js/custom-menu.js"/>
+        <!-- ADDED INTO LAYOUT UPDATE XML IN CMS -->
+        <!-- <script src="js/custom-home.js"/> -->
+        <!-- <script src="js/ingredients.js"/> -->
     </head>
     <body>
         <referenceContainer name="header.container">

@@ -1,165 +1,76 @@
 
-
-
-.ui-collapsible {
-	margin: 0 -1em;
+.expandable-panel h2, 
+.expandable-panel p, 
+.expandable-panel ol, 
+.expandable-panel ul, 
+.expandable-panel li {
+    margin:0px;
+    padding:0px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
 }
-.ui-collapsible-inset,
-.ui-collapsible-set {
-	margin: .5em 0;
+ 
+#container1 {
+    /*width:300px;*/
+    /*margin:auto;*/
+    margin-top:50px;
+    margin-left:20px;
 }
-.ui-collapsible-heading {
-	display: block;
-	margin: 0;
-	padding: 0;
-	position: relative;
+ 
+/* --------- COLLAPSIBLE PANELS ----------*/
+ 
+.expandable-panel {
+    width:100%;
+    position:relative;
+    min-height:70px;
+    overflow:auto;
+    margin-bottom: 10px;
+    /*border:1px solid #999;*/
+    box-shadow: 2px 2px 3px #DDD;
 }
-.ui-collapsible-heading .ui-btn {
-	text-align: left;
-	margin: 0;
-	border-left-width: 0;
-	border-right-width: 0;
+.expandable-panel-heading {
+    width:100%;
+    cursor:pointer;
+    min-height:70px;
+    clear:both;
+    background-color: #F5F5F5;
+    position:relative;
+    box-shadow: 0 0 5px 3px #DDD;
+    /*color:#000 !important;*/
 }
-.ui-collapsible-heading .ui-btn-icon-top,
-.ui-collapsible-heading .ui-btn-icon-bottom {
-	text-align: center;
+.expandable-panel-heading:hover {
+    color: #000 !important;
 }
-.ui-collapsible-inset .ui-collapsible-heading .ui-btn {
-	border-right-width: 1px;
-	border-left-width: 1px;
+.expandable-panel-heading h2 {
+    padding:14px 10px 9px 15px;
+    font-size:18px;
+    line-height:20px;
+    text-transform: capitalize;
 }
-.ui-collapsible-collapsed + .ui-collapsible:not(.ui-collapsible-inset) > .ui-collapsible-heading .ui-btn {
-	border-top-width: 0;
+.expandable-panel-content {
+    padding:0 15px 0 15px;
+    margin-top:-999px;
 }
-.ui-collapsible-set .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
-	border-top-width: 1px;
+.expandable-panel-content p {
+    padding:4px 0 6px 0;
 }
-.ui-collapsible-heading-status {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px,1px,1px,1px);
+.expandable-panel-content p:first-child  {
+    padding-top:10px;
 }
-.ui-collapsible-content {
-	display: block;
-	margin: 0;	
-	padding: .5em 1em;
+.expandable-panel-content p:last-child {
+    padding-bottom:15px;
 }
-.ui-collapsible-themed-content .ui-collapsible-content {
-	border-left-width: 0;
-	border-right-width: 0;
-	border-top-width: 0;
-	border-bottom-width: 1px;
-	border-style: solid;
+.icon-close-open {
+    width:20px;
+    height:20px;
+    position:absolute;
+    background-image: url(../images/icon-close-open.png);
+    right:15px;
 }
-.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
-	border-left-width: 1px;
-	border-right-width: 1px;
+.expandable-panel-content img {
+    float:right;
+    padding-left:12px;
 }
-.ui-collapsible-inset .ui-collapsible-content {
-	margin: 0;
+.header-active {
+    background-color:#FFD156;
 }
-.ui-collapsible-content-collapsed {
-	display: none;
-}
-.ui-collapsible-set > .ui-collapsible.ui-corner-all {
-	-webkit-border-radius: 0;
-	border-radius: 0;
-}
-.ui-collapsible-heading,
-.ui-collapsible-heading > .ui-btn {
-	-webkit-border-radius: inherit;	
-	border-radius: inherit;	
-}
-.ui-collapsible-set .ui-collapsible.ui-first-child {
-	-webkit-border-top-right-radius: inherit;	
-	border-top-right-radius: inherit;
-	-webkit-border-top-left-radius: inherit;	
-	border-top-left-radius: inherit;		
-}
-.ui-collapsible-content,
-.ui-collapsible-set .ui-collapsible.ui-last-child {
-	-webkit-border-bottom-right-radius: inherit;	
-	border-bottom-right-radius: inherit;
-	-webkit-border-bottom-left-radius: inherit;	
-	border-bottom-left-radius: inherit;		
-}
-.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {
-	-webkit-border-bottom-right-radius: 0;	
-	border-bottom-right-radius: 0;
-	-webkit-border-bottom-left-radius: 0;	
-	border-bottom-left-radius: 0;		
-}
-.ui-collapsible-set .ui-collapsible {
-	margin: -1px -1em 0;
-}
-.ui-collapsible-set .ui-collapsible-inset {
-	margin: -1px 0 0;
-}
-.ui-collapsible-set .ui-collapsible.ui-first-child {
-	margin-top: 0;
-}
-
-
-.ui-collapsible-content > form.ui-filterable {
-	margin-top: -.5em;
-}
-.ui-collapsible-content > .ui-input-search.ui-filterable {
-	margin-top: 0;
-}
-.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child,
-.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn,
-.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child,
-.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn {
-	border-top-width: 1px;
-}
-
-
-.ui-collapsible-content > .ui-listview {
-	margin: -.5em -1em;
-}
-.ui-collapsible-content > .ui-listview-inset {
-	margin: .5em 0;
-}
-.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > li.ui-first-child,
-.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn {
-	border-top-width: 0;
-}
-.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > li.ui-last-child,
-.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > li.ui-last-child > a.ui-btn {
-	border-bottom-width: 0;
-}
-.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) {
-	-webkit-border-radius: inherit;
-	border-radius: inherit;	
-}
-
-
-html .ui-filterable + .ui-listview,
-html .ui-filterable.ui-listview {
-	margin-top: .5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

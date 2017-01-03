@@ -1,21 +1,11 @@
 /*
-
-CSS File for front-page structure includes:
-    App Border / Menu / Main Logo / 
+CSS File for ALL-PAGE structure includes:
+    App Border / Main Logo / 
     Fixed Footer / Call to Action Buttons
 Media queries to go along with this file found in media.css
 */
 
-body {
-    background-color: #fff;
-    color: #9296ab;
-    margin: 0;
-}
-a {
-    background-color: transparent;
-    text-decoration: none;
-    color: #2d2b51;
-}
+    /*PAGE BACKGROUND AND BORDERS*/
 
 .app-border {
     position: fixed;
@@ -57,35 +47,16 @@ a {
     box-shadow: 0 8px 4px 0 rgba(0,0,0,.2);
 }
 .border-left.fix-border:after {
+    display: block;
     content: " ";
     position: absolute;
     bottom: 0;
     left: 4px;
-    display: block;
     width: 8px;
     height: 8px;
-    background-color: #fff
+    background-color: #fff;
 }
 
-
-/*======================================*/
-
-
-.logo {
-    position: fixed;
-    top: 1.5vw;
-    left: 2vw;
-    width: 14vw;
-    height: 10vw;
-    z-index: 9996;
-    opacity: 0.7;
-}
-.logo:hover {
-    opacity: 1.0;
-}
-.logo img { 
-    width: 100%;
-}
 
 #page-background {
     position: fixed;
@@ -108,6 +79,40 @@ a {
     margin: 0 auto;
     width: 72.5%
 }
+
+/*======================================*/
+
+body {
+    background-color: #fff;
+    color: #9296ab;
+    margin: 0;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #2d2b51;
+}
+.page-title-wrapper {
+    text-align:center;
+}
+
+
+.logo {
+    position: fixed;
+    top: 1.5vw;
+    left: 2vw;
+    width: 14vw;
+    height: 10vw;
+    z-index: 9996;
+    opacity: 1.0;
+}
+.logo img { 
+    width: 100%;
+}
+.logo:hover {
+    opacity: 0.8;
+}
+
 .page .copyright-container {
     position: fixed;
     bottom: 4.62963vw;
@@ -159,7 +164,6 @@ a.link--hover:after {
 }
 
 /*=================================*/
-
 .page-wrapper {
     box-sizing: border-box;
     padding: 8px;
@@ -170,462 +174,7 @@ a.link--hover:after {
     padding-bottom: 37.03704vw;
 }
 
+
 /*====================================*/
 
-.c2Action {
-    position: fixed;
-    display: none;
-}
-.c2Action-link-wrapper { display: inline-block }
-.c2Action .button {
-    border: solid 2px #E08500;
-    box-sizing: border-box;
-    position: relative;
-    font-weight: 700;
-    cursor: pointer;
-    opacity: 0.7 !important;
-}
-.c2Action .button:hover {
-    opacity: 1.0 !important;
-    -webkit-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-.button { display: inline-block }
 
-.button-c2Action:hover {
-    box-shadow: 0 10px 13px 0 rgba(18,17,30,.15);
-    /*overflow: hidden;*/
-    z-index: 0;
-    -webkit-transition: box-shadow .2s ease-in-out;
-    transition: box-shadow .2s ease-in-out;
-    -webkit-transform: translateY(-12%);
-    transform: translateY(-12%)
-}
-.button-c2Action:after, .button-c2Action:before {
-    content: " ";
-    display: table;
-}
-.button-c2Action .button-background {
-    background-color: #ff9800;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.button-c2Action .icon {
-    float: left;
-    position: relative;
-    height: inherit;
-    width: 9.25926vw;
-}
-.button-c2Action .label {
-    position: relative;
-    top: 50%;
-    color: #fff;
-    font-weight: 400;
-    font-size: 2.03704vw;
-    letter-spacing: .04em;
-    overflow: hidden;
-    line-height: 1.5;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.button-c2Action.large .label strong {
-    font-size: 2.96296vw
-}
-.wcart, .wfoods {
-    position: relative;
-    top: 20px;
-    left: 10px;
-}
-.wcart img, .wfoods img {
-    width: 50px;
-    height: 50px;
-}
-
-/*==============================*/
-        /*Hamburger Menu*/
-
-#hamburger {
-    opacity: 0;
-}
-.hamburger {
-    position: fixed;
-    top: 22px;
-    right: 18px;
-    width: 25px;
-    height: 19px;
-    cursor: pointer;
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.hamburger.is-active .hamburger--outer:nth-child(1),.hamburger.is-active .hamburger--outer:nth-child(2),.hamburger.is-active .hamburger--outer:nth-child(3),.hamburger.is-inactive:hover .hamburger--outer:nth-child(6),.hamburger.is-inactive:hover .hamburger--outer:nth-child(7) {
-    display: none;
-}
-.hamburger.is-active .hamburger--outer:nth-child(6) {
-    -webkit-transform: rotate(225deg) translateX(0) scaleX(1);
-    transform: rotate(225deg) translateX(0) scaleX(1);
-    top: 17px;
-    left: 22px
-}
-.hamburger.is-active .hamburger--outer:nth-child(7) {
-    -webkit-transform: rotate(-45deg) translateX(0) scaleX(1);
-    transform: rotate(-45deg) translateX(0) scaleX(1);
-    top: 17px;
-    left: 4px
-}
-.hamburger.is-active:hover .hamburger--outer:nth-child(6) {
-    -webkit-transform: rotate(225deg) translateX(0) scaleX(0);
-    transform: rotate(225deg) translateX(0) scaleX(0);
-    -webkit-transition-duration: .42s;
-    transition-duration: .42s;
-    -webkit-transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    -webkit-transition-delay: .1s;
-    transition-delay: .1s
-}
-.hamburger.is-active:hover .hamburger--outer:nth-child(7) {
-    -webkit-transform: rotate(-45deg) translateX(0) scaleX(0);
-    transform: rotate(-45deg) translateX(0) scaleX(0);
-    -webkit-transition-duration: .42s;
-    transition-duration: .42s;
-    -webkit-transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    -webkit-transition-delay: .2s;
-    transition-delay: .2s
-}
-.hamburger.is-active:hover .hamburger--outer:nth-child(4) {
-    -webkit-transform: rotate(45deg) translateX(0) scaleX(1);
-    transform: rotate(45deg) translateX(0) scaleX(1);
-    -webkit-transition-duration: .42s;
-    transition-duration: .42s;
-    -webkit-transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    -webkit-transition-delay: .3s;
-    transition-delay: .3s
-}
-.hamburger.is-active:hover .hamburger--outer:nth-child(5) {
-    -webkit-transform: rotate(135deg) translateX(0) scaleX(1);
-    transform: rotate(135deg) translateX(0) scaleX(1);
-    -webkit-transition-duration: .42s;
-    transition-duration: .42s;
-    -webkit-transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    transition-timing-function: cubic-bezier(.52,.01,.16,1);
-    -webkit-transition-delay: .4s;
-    transition-delay: .4s
-}
-.hamburger.is-inactive:hover .hamburger--outer:nth-child(1) {
-    -webkit-animation: hamburgerHover .33s ease-out .32s;
-    animation: hamburgerHover .33s ease-out .32s
-}
-.hamburger.is-inactive:hover .hamburger--outer:nth-child(2) {
-    -webkit-animation: hamburgerHover .33s ease-out .21s;
-    animation: hamburgerHover .33s ease-out .21s;
-    left: 0;
-    width: 100%;
-    -webkit-transition-duration: .1s;
-    transition-duration: .1s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease
-}
-.hamburger.is-inactive:hover .hamburger--outer:nth-child(3) {
-    -webkit-animation: hamburgerHover .33s ease-out .1s;
-    animation: hamburgerHover .33s ease-out .1s
-}
-
-.hamburger--outer {
-    display: block;
-    position: absolute;
-    height: 3px;
-    background: #2d2b51;
-    border-radius: 9px;
-    opacity: 1;
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
-}
-.hamburger--outer:nth-child(1),.hamburger--outer:nth-child(4),.hamburger--outer:nth-child(6) {
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-transform-origin: left center;
-    transform-origin: left center
-}
-.hamburger--outer:nth-child(2) {
-    top: 8px;
-    left: 6px;
-    width: 19px;
-    -webkit-transform-origin: left center;
-    transform-origin: left center
-}
-.hamburger--outer:nth-child(3),.hamburger--outer:nth-child(5),.hamburger--outer:nth-child(7) {
-    top: 16px;
-    left: 0;
-    width: 100%;
-    -webkit-transform-origin: left center;
-    transform-origin: left center
-}
-.hamburger--outer:nth-child(4) {
-    top: -1px;
-    left: 4px;
-    -webkit-transform: rotate(45deg) translateX(0) scaleX(0);
-    transform: rotate(45deg) translateX(0) scaleX(0)
-}
-.hamburger--outer:nth-child(5) {
-    top: -1px;
-    left: 22px;
-    -webkit-transform: rotate(135deg) translateX(0) scaleX(0);
-    transform: rotate(135deg) translateX(0) scaleX(0)
-}
-@-webkit-keyframes hamburgerHover {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-    50% {
-        -webkit-transform: translateX(110%);
-        transform: translateX(110%)
-    }
-    50.001% {
-        -webkit-transform: translateX(0) translateY(11px);
-        transform: translateX(0) translateY(11px)
-    }
-    100% {
-        -webkit-transform: translateX(0) translateY(0);
-        transform: translateX(0) translateY(0)
-    }
-}
-@keyframes hamburgerHover {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-    50% {
-        -webkit-transform: translateX(110%);
-        transform: translateX(110%)
-    }
-    50.001% {
-        -webkit-transform: translateX(0) translateY(11px);
-        transform: translateX(0) translateY(11px)
-    }
-    100% {
-        -webkit-transform: translateX(0) translateY(0);
-        transform: translateX(0) translateY(0)
-    }
-}
-
-
-
-
-.overlay {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    height: 0vh;
-    background-color: rgba(255,255,255,.9)
-    z-index: 10000;
-}
-.navigation {
-    position: fixed;
-    z-index: 10000;
-}
-.navigation .navigation-overlay {
-    display: none
-}
-.navigation-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,.9)
-}
-.navigation.open .main-nav-container {
-    box-shadow: 0 -2px 4px 2px rgba(0,0,0,.12)
-}
-.navigation-footer {
-    position: absolute;
-    bottom: 20px;
-    margin: 0 -3.7037vw
-}
-.navigation-footer .wrapper .slash {
-    font-size: 10px;
-    padding: 0 8px 0 9px
-}
-.navigation-footer .wrapper a {
-    display: inline-block;
-    font-size: 8px;
-    text-transform: uppercase;
-    text-rendering: geometricPrecision;
-    letter-spacing: .04em
-}
-.navigation .copyright,.navigation .crafted a:hover {
-    color: #2d2b51
-}
-#about-page #section-3,#about-page #section-3:after,#about-page #section-5:after,.blog-categories:after,.blog-single .form-container:after,.button-store-download:after,.featured-posts:after,.group-row:after,.instagram-grid-items:after,.navigation-footer .social-buttons:after,.page-section,.page-section:after,.post-author-full:after,.post-categories:after,.post-loader,.post-navigation:after,.post-share .share-list:after,.posts-wrapper:after,.section-inner.center,.section-inner:after {
-    clear: both
-}
-.navigation-footer .social-buttons {
-    list-style: none;
-    padding: 0
-}
-.navigation-footer .social-buttons:after,.navigation-footer .social-buttons:before {
-    content: " ";
-    display: table
-}
-.navigation-footer .social-buttons li {
-    position: relative;
-    float: left;
-    margin-left: -1px;
-    line-height: 0;
-    z-index: 0
-}
-.navigation-footer .social-buttons li:hover {
-    z-index: 1
-}
-.navigation-footer .wrapper,.section-inner.center,time {
-    text-align: center
-}
-
-
-
-.main-nav-container {
-    box-sizing: border-box;
-    position: fixed;
-    top: -100%;
-    right: 0;
-    width: 59.72222vw;
-    height: 100%;
-    padding: 5.55556vw 5.09259vw 0 8.51852vw;
-    background-color: #fff;
-}
-.menuLogo {
-    position: relative;
-    left: -50px;
-    top: -20px;
-}
-.menuLogo img {
-    /*border: 1px solid green;*/
-}
-.button-fill:hover,.main-nav .site-links a {
-    text-decoration: none
-}
-.main-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-.main-nav li {
-    position: relative;
-    margin-bottom: 1.85185vw;
-    overflow: hidden
-}
-.main-nav li:last-of-type {
-    margin-bottom: 0
-}
-.main-nav a {
-    display: inline-block;
-    position: relative;
-    color: #2d2b51;
-}
-.main-nav span {
-    margin-right: 16px
-}
-.main-nav .nav--hover:after {
-    content: "";
-    position: absolute;
-    right: 100%;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: .55556vw;
-    min-height: 3px;
-    background-color: #0077ed;
-    opacity: 0;
-    -webkit-transition: right .32s cubic-bezier(.165,.84,.44,1),opacity .32s cubic-bezier(.165,.84,.44,1);
-    transition: right .32s cubic-bezier(.165,.84,.44,1),opacity .32s cubic-bezier(.165,.84,.44,1)
-}
-.main-nav .nav--hover.active:after,.main-nav .nav--hover:hover:after {
-    right: 0;
-    opacity: 1;
-}
-.main-nav .site-links {
-    margin-bottom: 0
-}
-.main-nav .site-links a {
-    margin-left: 0;
-    padding-bottom: 6px;
-    font-weight: 700;
-    font-size: 5.55556vw;
-    text-transform: uppercase;
-    overflow: hidden;
-    -webkit-transition: all .16s cubic-bezier(.165,.84,.44,1);
-    transition: all .16s cubic-bezier(.165,.84,.44,1)
-}
-.main-nav .site-links a span {
-    font-size: 3.42593vw
-}
-.main-nav .site-links a:hover {
-    margin-left: .32em
-}
-.main-nav .store-downloads a {
-    color: #c8cad5;
-    font-size: 3.51852vw;
-    -webkit-transition: color .12s cubic-bezier(.165,.84,.44,1);
-    transition: color .12s cubic-bezier(.165,.84,.44,1);
-    text-decoration: none
-}
-.main-nav .store-downloads a:hover {
-    color: #2d2b51
-}
-.main-nav .store-downloads a.nav--hover:after {
-    background-color: #2d2b51;
-    height: 1px
-}
-
-
-
-.button-social {
-    position: relative;
-    width: 10vw;
-    height: 10vw;
-    border: 1px solid transparent;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: all .48s cubic-bezier(.075,.82,.165,1);
-    transition: all .48s cubic-bezier(.075,.82,.165,1);
-    z-index: 0;
-}
-.button-social:hover {
-    box-shadow: 0 20px 25px 0 rgba(18,17,30,.15);
-    border-color: #c8cad5;
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-    z-index: 1;
-}
-.button-social .icon {
-    position: relative;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: orange;
-}
-.button-social .icon:hover {
-    background-color: white;
-}
-
-
-
-.socI {
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-}
-.socI:hover #path{
-    fill:orange;
-}
-#path {
-    fill:white;
-}
