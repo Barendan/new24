@@ -1,12 +1,9 @@
-/* ALL DESKTOP STYLES FOR */
-/* ABOUT, BLOG, CONTACT PAGES */
-/* MOBILE,TABLET CSS LOCATED @BOTTOM */
 
-/*.page-title-wrapper {
-	padding-left: 40%;
-}*/
+.big-head {
+	margin: 0;
+	text-align: center;
+}
 
-					/*============== ABOUT SECTION ===============*/
 .about-page {
 	margin-left: auto;
 	margin-right: auto;
@@ -30,11 +27,12 @@
 }
 
 #about-page h3 {
-	max-width: 400px;
-	padding-left: 60%;
+	/*max-width: 400px;*/
+	/*padding-left: 30%;*/
 	margin-top: 10%;
-
-	font-size: 28px;
+	margin-bottom: 0;
+	font-size: 26px;
+	width: 700px;
 }
 #about-page h4 {
 	max-width: 480px;
@@ -50,41 +48,52 @@
 
 /*======*/
 
-.nate {
-	/*display: inline-block;*/
-	/*display: none;*/
+.description-box {
 	width: 40%;
 	padding-left: 10%;
 	/*padding-right: 10px;*/
 }
+.heading-uno {
+	margin-left: 65%;
+}
 
-.natepic {
-	/*display: inline-block;*/
-/*	position: relative;
-	top: 150px;
-	right: 100px;*/
-	background-image: url(../images/demo/dummy11.png);
-	background-size: 520px 900px;
-	width: 520px;
+.image-box{
+	position: relative;
+	left: -100px;
+	/*background-image: url(../images/demo/dummy11.png);*/
+	/*background-size: 520px 900px;*/
+	width: 705px;
+	height: 905px;
+}
+#natepic {
+	width: 700px;
 	height: 900px;
+}
+#drank {
+	position: absolute;
+	top: 480px;
+	left: 457px;
+	width: 145px;
+	height: 295px;
+	/*filter: grayscale(100%); */
 }
 
 .byhead {
-	padding-left: 230px;
-	width: 450px;
+	padding-left: 176px;
+	width: 550px;
 }
 .bytorso {
-	padding-left: 190px;
-	width: 370px;
+	padding-left: 130px;
+	width: 500px;
 }
 .bywaist {
-	padding-left: 190px;
-	width: 340px;
+	padding-left: 100px;
+	width: 500px;
 }
 
 .twofo {
+	/*display: none;*/
 	display: none;
-	/*display: inline-block;*/
 }
 
 

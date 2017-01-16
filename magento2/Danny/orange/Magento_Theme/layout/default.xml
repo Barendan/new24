@@ -7,6 +7,7 @@
         <!-- ADDED INTO LAYOUT UPDATE XML IN CMS -->
         <!-- <script src="js/custom-home.js"/> -->
         <!-- <script src="js/ingredients.js"/> -->
+        <!-- <script src="js/about.js"/> -->
     </head>
     <body>
         <referenceContainer name="header.container">

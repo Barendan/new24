@@ -8,7 +8,7 @@
 	margin-left: 20px;
 	margin-bottom: 50px;
 	width: 100%;
-	height: 700px;
+	height: 660px;
 	padding: 50px 40px 0px 50px;
 	border-radius: 8px;
     box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
@@ -25,11 +25,16 @@
 	height: auto;
 	float: left;
 }
+.address {
+    /*width: 45%;*/
+    /*height: auto;*/
+    float: right;
+}
 
 .field {
     width: 400px;
     max-width: 100%;
-    border: 1px solid #dedede;
+    /*border: 1px solid #dedede;*/
     font-size: 18px;
     color: #908e91;
     /*font-family: 'ProximaNovaLight';*/
@@ -39,6 +44,9 @@
     height: auto;
     border-radius: 8px;
     box-shadow: none;
+}
+textarea {
+    color: black !important;
 }
 
 .gradbtn {
@@ -97,10 +105,10 @@
 	color: #24a717;
 }
 
-
 .cinfo .button-social {
 	width: 60px !important;
 	height: 60px !important;
+    margin: 0;
 }
 .cinfo .socI {
 	padding: 10px 15px;
@@ -108,33 +116,32 @@
 	height: 40px;
 }
 .social-container {
-	position:absolute;
-	top:408px;
-	right:200px;
+	margin: 5% 18%;
+    text-align: center;
 }
 
-
-#about-page #section-3,#about-page #section-3:after,#about-page #section-5:after,.blog-categories:after,.blog-single .form-container:after,.button-store-download:after,.featured-posts:after,.group-row:after,.instagram-grid-items:after,.cinfo .social-buttons:after,.page-section,.page-section:after,.post-author-full:after,.post-categories:after,.post-loader,.post-navigation:after,.post-share .share-list:after,.posts-wrapper:after,.section-inner.center,.section-inner:after {
-    clear: both
-}
 .cinfo .social-buttons {
+    display: inline;
     list-style: none;
+    width: 150px;
+    /*margin-left: 15%;*/
     padding: 0;
-	/*margin-left: 15%;*/
-	width: 150px;
-}
-.cinfo .social-buttons:after, .cinfo .social-buttons:before {
-    content: " ";
-    display: table;
 }
 .cinfo .social-buttons li {
     position: relative;
     float: left;
     /*margin-left: -1px;*/
-    /*line-height: 0;*/
     z-index: 0;
-	padding: 3px;
+    /*padding: 3px;*/
 }
+
 .cinfo .social-buttons li:hover {
     z-index: 1;
+}
+.cinfo .social-buttons:after, .cinfo .social-buttons:before {
+    content: " ";
+    display: table;
+}
+#about-page #section-3,.form-container:after,.button-store-download:after,.featured-posts:after,.cinfo .social-buttons:after,.page-section,.page-section:after,.posts-wrapper:after,.section-inner.center,.section-inner:after {
+    clear: both;
 }

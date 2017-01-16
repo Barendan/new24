@@ -8,26 +8,27 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
 
-		<css src="mage/calendar.css"/>
-        <css src="css/styles-l.css" media="screen and (min-width: 768px)" />
-        <!-- <css src="css/styles-m.css" /> -->
-        <!-- <css src="css/print.css" media="print" /> -->
+		<!-- <css src="mage/calendar.css"/> -->
         <css src="css/basic.css"/>
         <css src="css/custom-menu.css"/>
-
-        <css src="css/abc.css"/>
         <css src="css/media.css"/>
 
         <!-- ADDED INTO LAYOUT UPDATE XML IN CMS -->
         <!-- <css src="css/custom-home.css"/> -->
         <!-- <css src="css/ingre.css"/> -->
+        <!-- <css src="css/about.css"/> -->
+        <!-- <css src="css/blog.css"/> -->
         <!-- ADDED INTO CONTACT_INDEX_INDEX.XML -->
         <!-- <css src="css/contact.css"/> -->
+        <!-- ADDED INTO SPECIFIC CUSTOMER_ACCOUNT.XML -->
+        <!-- <css src="css/customer.css"/> -->
 
         <meta name="format-detection" content="telephone=no"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         
+        <link src="http://fonts.googleapis.com/css?family=Arvo|Droid+Serif|Josefin+Sans|PT+Serif|Ubuntu" src_type="url" /> 
         <script src="requirejs/require.js"/>
+        <!-- <script src="js/theme.js"/> -->
         
     </head>
     

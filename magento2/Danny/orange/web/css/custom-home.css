@@ -72,12 +72,18 @@ head {
 	min-height: 900px;
 }
 
-.showcase.right .bottle-wrapper {
+.showcase.right {
     right: 8.51852vw;
 }
 .bottle {
 	position: absolute;
     /*width: 83.7963vw;*/
+}
+.boxopen {
+    position: relative;
+    left: 100px;
+    width: 110%;
+    transform:scaleX(-1);
 }
 
 .fruit {
@@ -87,25 +93,25 @@ head {
     /*background-size: 50%;*/
 }
 #wm {
-	top: 31vh;
-    right: 25vw;
+	top: 25vh;
+    right: 16vw;
     height: 40vh;
     width: 15vw;
 	background: url(../images/watermelon.png);
     background-repeat: no-repeat;
 }
 #rp {
-    top: 65vh;
-    right: 38vw;
+    top: 72vh;
+    right: 1vw;
     width: 120px;
     height: 78px;
 	background: url(../images/raspberry.png);
     background-repeat: no-repeat;
-	z-index: 12;
+	z-index: 10;
 }
 #gp {
-    top: 61vh;
-    right: 20vw;
+    top: 65vh;
+    right: -16vw;
     width: 281px;
     height: 154px;
 	background: url(../images/grapes.png);
@@ -113,20 +119,21 @@ head {
 	z-index: 11;
 }
 #cc {
-    top: 60vh;
-    left: 25vw;
+    top: 54vh;
+    left: -5vw;
     height: 30vh;    
-    width: 30vw;
+    width: 25vw;
 	background: url(../images/coconut.png);
     background-repeat: no-repeat;
 	z-index: 10;
 }
 #pn {
-    top: 40vh;
-    left: 34vw;
-    width: 25vw;
-    height: 30vh;
+    top: 30vh;
+    left: 40vw;
+    width: 20vw;
+    height: 45vh;
 	background: url(../images/pineapple.png);
+    background-size: cover;
     background-repeat: no-repeat;
 	z-index: 9;
 }
@@ -146,9 +153,6 @@ head {
     margin-right: auto;
     margin-left: auto
 }
-.showcase img {
-	width: 100%;
-}
 .thePour {
 	background: url(../images/pour3.png);
 	background-repeat: no-repeat;
@@ -158,6 +162,10 @@ head {
 	width: 500px;
 	height: 405px;
 }
+.showcase .thePour img {
+    width: 100%;
+}
+
 .helper {
 	position: relative;
 	top: 150px;
@@ -270,79 +278,46 @@ head {
 /*==========================================*/
 		/*Third Section*/
 
-
 #feature-page #section-3 {
+    min-height: 720px; 
+	padding-bottom: 50px;
     /*margin-bottom: 9.25926vw*/
 }
+#section-3 p {
+    max-width: 70%;
+    /*height: 70px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+.finale h2 {
+    text-transform: uppercase;
+    margin-top: 0 !important;
+}
+
+.sticker {
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 50px;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
+}
+.sticker:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);}
+
+.finale {
+    position: absolute;
+    top: 72vh;
+    left: 49vw;
+    width: 400px;
+}
+
 .heading-pre {
     margin-bottom: 1.30208vw;
     font-size: 1.85185vw;
     text-transform: uppercase;
 }
-#section-3 {
-	padding-bottom: 50px;
-	/*height: 370px;*/
-}
-#section-3-1 h1{
-	font-size: 1.92708vw;
-	margin-bottom: .78125vw;
-}
-#section-3-1 p {
-	max-width: 49%;
-    /*height: 70px;*/
-	margin-right: auto;
-    margin-left: auto;
-}
-
-.claim img:first-child {
-	position: relative;
-	top: 5vh;
-	left: -17vw;
-	width: 110%;
-}
-.claim-descriptions img {
-	width: 20%;
-	transform: skew(0deg,30deg);
-}
-.sticker {
-	position: absolute;
-}
-.sticker:hover {
-	/*transform: scale(2,2);*/
-	z-index: 10;
-}
-.cv {
-	top: 40vh;
-	left: 50vw;
-}
-.cg {
-	top: 291px;
-	left: 193px;
-}
-.cu {
-	top: 1vh;
-	left: 50vw;
-}
-.cs {
-	top: 8vh;
-	left: 65vw;
-}
-.cc {
-	top: 40vh;
-	left: 65vw;
-}
-.cn {
-	top: 254px;
-	left: 328px;
-}
-
-.finale {
-	position: absolute;
-	top: 72vh;
-	left: 49vw;
-	width: 400px;
-}
-
 
 /*===================================*/
 

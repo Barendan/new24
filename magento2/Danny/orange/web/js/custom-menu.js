@@ -11,7 +11,7 @@ require([
       // $('.navigation-overlay').css
       
       // ====== STAGGERED REVEAL MENU =======
-      var mItems = $(".menuLogo, .site-links li, .store-downloads, .navigation-footer .copyright-container");
+      var mItems = $(".menuLogo, .site-links li, .navigation-footer .copyright-container");
       var hb = $("#hamburger");
       var nav = $(".navigation1");
 

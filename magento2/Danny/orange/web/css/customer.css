@@ -1,0 +1,450 @@
+
+body {
+    color: #333333;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.4rem;
+}
+
+/*.form.password.reset, .form.send.confirmation, .form.password.forget, .form.create.account {
+    min-width: 600px;
+    width: 50%;
+}*/
+
+/*=======================================*/
+
+
+.block-customer-login, .block-new-customer {
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px #DDD;
+    padding: 15px;
+}
+.form-create-account .info, .form-create-account .account {
+    width: 45%;
+    float:left;
+    padding: 10px;
+    margin:5px;
+}
+.form-create-account {
+    background: white;
+    box-shadow: 0px 0px 2px 2px #aaa;
+}
+
+/*.block-new-customer {
+    padding: 15px;
+}*/
+
+.login-container .block {
+    width: 45%;
+}
+.login-container .block:nth-child(1) {
+    clear: left;
+    float: left;
+}
+.login-container .block:nth-child(2), .account .column.main .block:not(.widget) .block-content .box:nth-child(2), .block-addresses-list .items.addresses > .item:nth-child(2), .form-address-edit > .fieldset:nth-child(2), .form-edit-account .fieldset:nth-child(2), .storecredit .block:nth-child(2), .paypal-review-discount .block:nth-child(2), .cart-discount .block:nth-child(2) {
+    float: right;
+}
+.login-container .block .block-title {
+    font-size: 1.8rem;
+}
+.login-container .block .block-title {
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+}
+.login-container .block .block-title strong {
+    font-weight: 500;
+}
+
+.login-container p {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+/*======= FOR RESGISTER PAGE ========*/
+.block-title, .multicheckout .block-title, .multicheckout .block-content .title, .account .legend, .form-giftregistry-search .legend, .block-giftregistry-results .block-title, .block-giftregistry-shared-items .block-title, .block-wishlist-search-form .block-title, .block-wishlist-search-results .block-title, .customer-review .review-details .title, .multicheckout .block-title, .paypal-review .block .block-title, .account .column.main .block:not(.widget) .block-title, .magento-rma-guest-returns .column.main .block:not(.widget) .block-title, [class^='sales-guest-'] .column.main .block:not(.widget) .block-title, .sales-guest-view .column.main .block:not(.widget) .block-title {
+    border-bottom: 1px solid #c6c6c6;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+.block-title > strong, .abs-account-blocks .block-title > span, .multicheckout .block-title > strong, .multicheckout .block-title > span, .multicheckout .block-content .title > strong, .multicheckout .block-content .title > span, .account .legend > strong, .account .legend > span, .form-giftregistry-search .legend > strong, .form-giftregistry-search .legend > span, .block-giftregistry-results .block-title > strong, .block-giftregistry-results .block-title > span, .block-giftregistry-shared-items .block-title > strong, .block-giftregistry-shared-items .block-title > span, .block-wishlist-search-form .block-title > strong, .block-wishlist-search-form .block-title > span, .block-wishlist-search-results .block-title > strong, .block-wishlist-search-results .block-title > span, .customer-review .review-details .title > strong, .customer-review .review-details .title > span, .multicheckout .block-title > strong, .multicheckout .block-title > span, .paypal-review .block .block-title > strong, .paypal-review .block .block-title > span, .account .column.main .block:not(.widget) .block-title > strong, .account .column.main .block:not(.widget) .block-title > span, .magento-rma-guest-returns .column.main .block:not(.widget) .block-title > strong, .magento-rma-guest-returns .column.main .block:not(.widget) .block-title > span, [class^='sales-guest-'] .column.main .block:not(.widget) .block-title > strong, [class^='sales-guest-'] .column.main .block:not(.widget) .block-title > span, .sales-guest-view .column.main .block:not(.widget) .block-title > strong, .sales-guest-view .column.main .block:not(.widget) .block-title > span {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+/*=============================================*/
+
+
+form {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fieldset > .legend {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.8rem;
+}
+.legend > span {
+    margin-right: 5px;
+}
+
+.fieldset:last-child {
+    margin-bottom: 0;
+}
+.fieldset {
+    border: 0;
+    margin: 0 0 40px;
+    padding: 0;
+    letter-spacing: -.31em;
+}
+.fieldset > .field.required > .label:after, .fieldset > .fields > .field.required > .label:after, .fieldset > .field._required > .label:after, .fieldset > .fields > .field._required > .label:after {
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 5px;
+}
+
+.login-container .fieldset:after {
+    margin-top: 35px;
+}
+.login-container .fieldset:after {
+    margin: 10px 0 0;
+    content: attr(data-hasrequired);
+    display: block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: #e02b27;
+    font-size: 1.2rem;
+}
+
+.fieldset > .field, .fieldset > .fields > .field {
+    margin: 0 0 20px;
+}
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+    font-weight: 600;
+}
+
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+    margin: 0 0 8px;
+    display: inline-block;
+}
+
+
+.fieldset > * {
+    letter-spacing: normal;
+}
+
+.actions-toolbar {
+    text-align: left;
+}
+
+.actions-toolbar .primary, .actions-toolbar .secondary {
+    display: inline-block;
+}
+
+.actions-toolbar .primary {
+    float: left;
+}
+
+.actions-toolbar > .primary, .actions-toolbar > .secondary {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.actions-toolbar > .primary:last-child, .actions-toolbar > .secondary:last-child {
+    margin-bottom: 0;
+}
+.login-container .block-new-customer .actions-toolbar {
+    margin-top: 25px;
+}
+.actions-toolbar .secondary a.action {
+    margin-top: 6px;
+}
+
+.actions-toolbar > .primary .action, .actions-toolbar > .secondary .action {
+    margin-bottom: 0;
+    width: auto;
+}
+.actions-toolbar > .secondary .action.back {
+    display: none;
+}
+.actions-toolbar > .primary .action:last-child, .actions-toolbar > .secondary .action:last-child {
+    margin-bottom: 0;
+}
+
+
+.actions-toolbar .primary .action {
+    margin: 0 15px 0 0;
+}
+.actions-toolbar > .primary, .actions-toolbar > .secondary {
+    margin-bottom: 0;
+    padding-left: 15%;
+}
+
+.action.primary {
+    background-image: none;
+    background: #ff9635;
+    border: 1px solid #f7631d;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.action.primary:hover {
+    background: #ffd156;
+    border: 1px solid #ff9635;
+    color: #ffffff;
+}
+
+a.action.primary:hover,
+a.action.primary:active,
+a.action.primary:focus {
+  text-decoration: none;
+}
+button, a.action.primary {
+    border-radius: 3px;
+}
+
+button {
+    background-image: none;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+a:visited, .alink:visited {
+    color: #1979c3;
+    text-decoration: none;
+}
+
+a, .alink {
+    color: #1979c3;
+    text-decoration: none;
+}
+a:hover, .alink:hover {
+    color: #006bb4;
+    text-decoration: underline;
+}
+
+
+
+.login-container .fieldset:after {
+    margin: 10px 0 0;
+    content: attr(data-hasrequired);
+    display: block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: #e02b27;
+    font-size: 1.2rem;
+}
+.login-container .fieldset:after {
+    margin-top: 35px;
+}
+
+.fieldset:last-child {
+    margin-bottom: 0;
+}
+.fieldset {
+    border: 0;
+    margin: 0 0 40px;
+    padding: 0;
+    letter-spacing: -.31em;
+}
+
+input.mage-error,
+select.mage-error,
+textarea.mage-error {
+  border-color: #ed8380;
+}
+div.mage-error[generated] {
+  color: #e02b27;
+  font-size: 1.2rem;
+}
+
+
+.field-error,
+div.mage-error[generated] {
+  margin-top: 7px;
+}
+.field-error {
+  color: #e02b27;
+  font-size: 1.2rem;
+}
+.field .tooltip {
+  position: relative;
+}
+.field .tooltip .tooltip-content {
+  background: #ffffff;
+  max-width: 360px;
+  min-width: 210px;
+  padding: 12px 16px;
+  z-index: 100;
+  display: none;
+  position: absolute;
+  text-align: left;
+  color: #333333;
+  line-height: 1.4;
+  border: 1px solid #bbbbbb;
+  margin-left: 5px;
+  left: 100%;
+  top: 0;
+}
+.field .tooltip .tooltip-content:after,
+.field .tooltip .tooltip-content:before {
+  border: solid transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.field .tooltip .tooltip-content:after {
+  border-width: 5px;
+  border-color: transparent;
+}
+.field .tooltip .tooltip-content:before {
+  border-width: 6px;
+  border-color: transparent;
+}
+.field .tooltip .tooltip-content:after,
+.field .tooltip .tooltip-content:before {
+  right: 100%;
+}
+.field .tooltip .tooltip-content:after {
+  border-right-color: #ffffff;
+  margin-top: -5px;
+  top: 15px;
+}
+.field .tooltip .tooltip-content:before {
+  border-right-color: #bbbbbb;
+  margin-top: -6px;
+  top: 15px;
+}
+.field .tooltip .tooltip-toggle {
+  cursor: help;
+}
+.field .tooltip .tooltip-toggle:hover + .tooltip-content,
+.field .tooltip .tooltip-toggle:focus + .tooltip-content,
+.field .tooltip:hover .tooltip-content {
+  display: block;
+}
+.field .tooltip .tooltip-content {
+  min-width: 200px;
+  white-space: normal;
+}
+input:focus ~ .tooltip .tooltip-content,
+select:focus ~ .tooltip .tooltip-content {
+  display: block;
+}
+
+.column .block-addbysku .qty .qty + .mage-error {
+  width: 80px;
+}
+
+.column .block-addbysku .qty .qty + .mage-error {
+  width: 80px;
+}
+
+.form.search.advanced .fields.range .field:last-child div.mage-error[generated] {
+  left: 0;
+  position: absolute;
+  top: 32px;
+}
+
+.field.password .control .mage-error {
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+}
+
+.sidebar .block-addbysku .fieldset .fields .field.qty .qty + .mage-error {
+  width: 80px;
+}
+
+
+/*==================================*/
+
+select {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 1.42857143;
+  padding: 5px 10px 4px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+}
+select:disabled {
+  opacity: 0.5;
+}
+select[multiple="multiple"] {
+  height: auto;
+  background-image: none;
+}
+textarea {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+/*====================================*/
+.actions-toolbar:after {
+    clear: both;
+}
+
+.actions-toolbar:before, .actions-toolbar:after {
+    content: '';
+    display: table;
+}
+
+.abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
+    content: '';
+    display: table;
+}
+
+.abs-add-clearfix-desktop:after, .paypal-review .block-content:after, .paypal-review-discount:after, .order-review-form:after, .block-cart-failed .block-content:after, .cart-container:after, .login-container:after, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:after, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:after, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:after, .header.content:after {
+    clear: both;
+}
+.abs-add-clearfix-desktop:before, .abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
+    content: '';
+    display: table;
+}
