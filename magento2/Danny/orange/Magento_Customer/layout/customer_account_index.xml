@@ -5,10 +5,10 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="basic" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="customer_account"/>
     <head>
-        <!-- <css src="css/print.css" media="print"/> -->
+        <!-- <css src="css/dashboard.css"/> -->
     </head>
     <body>
         <referenceBlock name="page.main.title">
@@ -20,5 +20,7 @@
             <block class="Magento\Customer\Block\Account\Dashboard\Info" name="customer_account_dashboard_info" as="info" template="account/dashboard/info.phtml" cacheable="false"/>
             <block class="Magento\Customer\Block\Account\Dashboard\Address" name="customer_account_dashboard_address" as="address" template="account/dashboard/address.phtml" cacheable="false"/>
         </referenceContainer>
+        <!-- <referenceContainer name="page.top" remove="true"/> -->
+
     </body>
 </page>
