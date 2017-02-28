@@ -9,8 +9,9 @@
 <head>
 
 	<!-- <css src="mage/calendar.css"/> -->
-    <css src="css/basic.css"/>
     <css src="css/custom-menu.css"/>
+    <css src="css/basic-styles.css"/>
+    <css src="css/structure.css"/>
     <css src="css/media.css"/>
 
     <!-- ADDED INTO LAYOUT UPDATE XML IN CMS -->

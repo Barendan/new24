@@ -1,0 +1,696 @@
+body {
+    color: #333333;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.4rem;
+}
+
+.actions-toolbar > .secondary .action.back {
+  display: none;
+}
+
+a:visited, .alink:visited {
+    color: #1979c3;
+    text-decoration: none;
+}
+
+a, .alink {
+    color: #1979c3;
+    text-decoration: none;
+}
+a:hover, .alink:hover {
+    color: #006bb4;
+    text-decoration: underline;
+}
+
+.navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+}
+
+textarea {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/*========================================*/
+.page-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+    transition: margin 0.3s ease-out 0s;
+}
+
+.page-main {
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+}
+
+.columns {
+    margin: 2% 10%;
+    display: block;
+}
+
+.columns {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.columns:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.column.main {
+    min-height: 300px;
+}
+
+
+b, strong {
+    font-weight: 700;
+}
+ul, ol {
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
+}
+ul > li, ol > li {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.actions-toolbar:after {
+    clear: both;
+}
+
+.actions-toolbar:before, .actions-toolbar:after {
+    content: '';
+    display: table;
+}
+
+
+.abs-add-box-sizing-desktop,
+.abs-shopping-cart-items-desktop,
+.column.main,
+.sidebar-main,
+.sidebar-additional,
+.bundle-options-container .block-bundle-summary,
+.block.crosssell,
+.magento-rma-guest-returns .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+.account .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+[class^='sales-guest-'] .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+.sales-guest-view .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+.block-cart-failed,
+.cart-container .form-cart,
+.cart-container .cart-gift-item {
+  box-sizing: border-box;
+}
+
+
+
+.fieldset {
+    border: 0;
+    margin: 0 0 40px;
+    padding: 0;
+    letter-spacing: -.31em;
+}
+.fieldset > .legend {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.8rem;
+}
+.legend > span {
+    margin-right: 5px;
+}
+.legend {
+    border-bottom: 1px solid #c5c5c5;
+}
+.fieldset > .field, .fieldset > .fields > .field {
+    margin: 0 0 20px;
+}
+.fieldset > * {
+    letter-spacing: normal;
+}
+
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+    font-weight: 600;
+}
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+    margin: 0 0 8px;
+    display: inline-block;
+}
+.fieldset > .field.required > .label:after, .fieldset > .fields > .field.required > .label:after, .fieldset > .field._required > .label:after, .fieldset > .fields > .field._required > .label:after {
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 5px;
+}
+
+
+button, a.action.primary {
+    border-radius: 3px;
+}
+
+button {
+    background-image: none;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.actions-toolbar {
+    text-align: left;
+}
+
+.actions-toolbar > .primary, .actions-toolbar > .secondary {
+    margin-bottom: 0;
+}
+
+.actions-toolbar .primary, .actions-toolbar .secondary {
+    display: inline-block;
+}
+.actions-toolbar .primary {
+    float: left;
+}
+.actions-toolbar > .primary, .actions-toolbar > .secondary {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.actions-toolbar > .primary .action:last-child, .actions-toolbar > .secondary .action:last-child {
+    margin-bottom: 0;
+}
+
+.actions-toolbar > .primary .action, .actions-toolbar > .secondary .action {
+    margin-bottom: 0;
+    width: auto;
+}
+.actions-toolbar .primary .action {
+    margin: 0 15px 0 0;
+}
+.actions-toolbar > .primary .action, .actions-toolbar > .secondary .action {
+    margin-bottom: 10px;
+}
+.actions-toolbar > .primary .action, .actions-toolbar > .secondary .action, .bundle-actions .action.primary.customize, .bundle-options-container .block-bundle-summary .box-tocart .action.primary, .box-tocart .action.tocart {
+    width: 100%;
+}
+.action.primary {
+    background-image: none;
+    background: #1979c3;
+    border: 1px solid #1979c3;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.actions-toolbar > .primary:last-child, .actions-toolbar > .secondary:last-child {
+    margin-bottom: 0;
+}
+.actions-toolbar > .primary, .actions-toolbar > .secondary {
+    margin-bottom: 0;
+}
+.action.primary:hover {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #ffffff;
+}
+button:not(.primary) {
+    box-shadow: inset 0 1px 0 0 #ffffff, inset 0 -1px 0 0 rgba(204, 204, 204, 0.3);
+}
+button:hover {
+    background: #e1e1e1;
+    border: 1px solid #cccccc;
+    color: #333333;
+}
+
+
+
+
+
+
+
+.abs-action-remove,
+.abs-discount-block .action.check,
+.popup .actions-toolbar .action.cancel,
+.paypal-button-widget .paypal-button,
+.bundle-options-container .action.back,
+.block.related .action.select,
+.cart.table-wrapper .actions-toolbar > .action-delete,
+.cart.table-wrapper .action.help.map,
+.checkout-index-index .modal-popup .modal-footer .action-hide-popup,
+.opc-wrapper .edit-address-link,
+.opc-block-shipping-information .shipping-information-title .action-edit,
+.action-auth-toggle,
+.checkout-payment-method .checkout-billing-address .action-cancel,
+.checkout-agreements-block .action-show,
+.gift-options .actions-toolbar .action-cancel,
+.gift-summary .action-edit,
+.gift-summary .action-delete,
+.action-gift,
+.gift-wrapping-title .action-remove,
+.wishlist.split.button > .action,
+.abs-add-fields .action.remove,
+.paypal-review-discount .action.check,
+.cart-discount .action.check,
+.form-giftregistry-share .action.remove,
+.form-giftregistry-edit .action.remove,
+.form-add-invitations .action.remove,
+.form-create-return .action.remove,
+.form.send.friend .action.remove {
+  line-height: 1.42857143;
+  padding: 0;
+  color: #1979c3;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  display: inline;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.abs-action-button-as-link:visited,
+.abs-action-remove:visited,
+.abs-discount-block .action.check:visited,
+.popup .actions-toolbar .action.cancel:visited,
+.paypal-button-widget .paypal-button:visited,
+.bundle-options-container .action.back:visited,
+.block.related .action.select:visited,
+.cart.table-wrapper .actions-toolbar > .action-delete:visited,
+.cart.table-wrapper .action.help.map:visited,
+.checkout-index-index .modal-popup .modal-footer .action-hide-popup:visited,
+.opc-wrapper .edit-address-link:visited,
+.opc-block-shipping-information .shipping-information-title .action-edit:visited,
+.action-auth-toggle:visited,
+.checkout-payment-method .checkout-billing-address .action-cancel:visited,
+.checkout-agreements-block .action-show:visited,
+.gift-options .actions-toolbar .action-cancel:visited,
+.gift-summary .action-edit:visited,
+.gift-summary .action-delete:visited,
+.action-gift:visited,
+.gift-wrapping-title .action-remove:visited,
+.wishlist.split.button > .action:visited,
+.abs-add-fields .action.remove:visited,
+.paypal-review-discount .action.check:visited,
+.cart-discount .action.check:visited,
+.form-giftregistry-share .action.remove:visited,
+.form-giftregistry-edit .action.remove:visited,
+.form-add-invitations .action.remove:visited,
+.form-create-return .action.remove:visited,
+.form.send.friend .action.remove:visited {
+  color: #1979c3;
+  text-decoration: none;
+}
+
+.abs-action-button-as-link:hover,
+.abs-action-remove:hover,
+.abs-discount-block .action.check:hover,
+.popup .actions-toolbar .action.cancel:hover,
+.paypal-button-widget .paypal-button:hover,
+.bundle-options-container .action.back:hover,
+.block.related .action.select:hover,
+.cart.table-wrapper .actions-toolbar > .action-delete:hover,
+.cart.table-wrapper .action.help.map:hover,
+.checkout-index-index .modal-popup .modal-footer .action-hide-popup:hover,
+.opc-wrapper .edit-address-link:hover,
+.opc-block-shipping-information .shipping-information-title .action-edit:hover,
+.action-auth-toggle:hover,
+.checkout-payment-method .checkout-billing-address .action-cancel:hover,
+.checkout-agreements-block .action-show:hover,
+.gift-options .actions-toolbar .action-cancel:hover,
+.gift-summary .action-edit:hover,
+.gift-summary .action-delete:hover,
+.action-gift:hover,
+.gift-wrapping-title .action-remove:hover,
+.wishlist.split.button > .action:hover,
+.abs-add-fields .action.remove:hover,
+.paypal-review-discount .action.check:hover,
+.cart-discount .action.check:hover,
+.form-giftregistry-share .action.remove:hover,
+.form-giftregistry-edit .action.remove:hover,
+.form-add-invitations .action.remove:hover,
+.form-create-return .action.remove:hover,
+.form.send.friend .action.remove:hover {
+  color: #006bb4;
+  text-decoration: underline;
+}
+
+.abs-action-button-as-link:hover,
+.abs-action-remove:hover,
+.abs-discount-block .action.check:hover,
+.popup .actions-toolbar .action.cancel:hover,
+.paypal-button-widget .paypal-button:hover,
+.bundle-options-container .action.back:hover,
+.block.related .action.select:hover,
+.cart.table-wrapper .actions-toolbar > .action-delete:hover,
+.cart.table-wrapper .action.help.map:hover,
+.checkout-index-index .modal-popup .modal-footer .action-hide-popup:hover,
+.opc-wrapper .edit-address-link:hover,
+.opc-block-shipping-information .shipping-information-title .action-edit:hover,
+.action-auth-toggle:hover,
+.checkout-payment-method .checkout-billing-address .action-cancel:hover,
+.checkout-agreements-block .action-show:hover,
+.gift-options .actions-toolbar .action-cancel:hover,
+.gift-summary .action-edit:hover,
+.gift-summary .action-delete:hover,
+.action-gift:hover,
+.gift-wrapping-title .action-remove:hover,
+.wishlist.split.button > .action:hover,
+.abs-add-fields .action.remove:hover,
+.paypal-review-discount .action.check:hover,
+.cart-discount .action.check:hover,
+.form-giftregistry-share .action.remove:hover,
+.form-giftregistry-edit .action.remove:hover,
+.form-add-invitations .action.remove:hover,
+.form-create-return .action.remove:hover,
+.form.send.friend .action.remove:hover {
+  color: #006bb4;
+}
+
+.form.send.friend .action.remove:hover,
+.form.send.friend .action.remove:active,
+.form.send.friend .action.remove:focus {
+  background: none;
+  border: 0;
+}
+
+.abs-action-button-as-link.disabled,
+.abs-action-button-as-link[disabled],
+fieldset[disabled] .abs-action-button-as-link,
+.abs-action-remove.disabled,
+.abs-action-remove[disabled],
+fieldset[disabled] .abs-action-remove,
+.abs-discount-block .action.check.disabled,
+.abs-discount-block .action.check[disabled],
+fieldset[disabled] .abs-discount-block .action.check,
+.popup .actions-toolbar .action.cancel.disabled,
+.popup .actions-toolbar .action.cancel[disabled],
+fieldset[disabled] .popup .actions-toolbar .action.cancel,
+.action-auth-toggle.disabled,
+.action-auth-toggle[disabled],
+fieldset[disabled] .action-auth-toggle,
+.checkout-payment-method .checkout-billing-address .action-cancel.disabled,
+.checkout-payment-method .checkout-billing-address .action-cancel[disabled],
+fieldset[disabled] .checkout-payment-method .checkout-billing-address .action-cancel,
+.checkout-agreements-block .action-show.disabled,
+.checkout-agreements-block .action-show[disabled],
+fieldset[disabled] .form-add-invitations .action.remove,
+.form-create-return .action.remove.disabled,
+.form-create-return .action.remove[disabled],
+fieldset[disabled] .form-create-return .action.remove,
+.form.send.friend .action.remove.disabled,
+.form.send.friend .action.remove[disabled],
+fieldset[disabled] .form.send.friend .action.remove {
+  color: #1979c3;
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: underline;
+}
+
+.form.send.friend .action.remove:active,
+.form.send.friend .action.remove:not(:focus) {
+  box-shadow: none;
+}
+
+.abs-add-fields .action.remove,
+.form-giftregistry-share .action.remove,
+.form-giftregistry-edit .action.remove,
+.form-add-invitations .action.remove,
+.form-create-return .action.remove,
+.form.send.friend .action.remove {
+  line-height: normal;
+  margin-left: 73%;
+  position: absolute;
+  top: 34px;
+  width: auto;
+}
+.form-giftregistry-share .fieldset .field .control,
+.form-giftregistry-edit .fieldset .field .control,
+.form-add-invitations .fieldset .field .control,
+.form-create-return .fieldset .field .control,
+.form.send.friend .fieldset .field .control {
+  width: 70%;
+}
+.form-giftregistry-share .fieldset .actions-toolbar > .secondary,
+.form-giftregistry-edit .fieldset .actions-toolbar > .secondary,
+.form-add-invitations .fieldset .actions-toolbar > .secondary,
+.form-create-return .fieldset .actions-toolbar > .secondary,
+.form.send.friend .fieldset .actions-toolbar > .secondary {
+  float: left;
+}
+.form-giftregistry-share .fieldset .actions-toolbar > .secondary .action.add,
+.form-giftregistry-edit .fieldset .actions-toolbar > .secondary .action.add,
+.form-add-invitations .fieldset .actions-toolbar > .secondary .action.add,
+.form-create-return .fieldset .actions-toolbar > .secondary .action.add,
+.form.send.friend .fieldset .actions-toolbar > .secondary .action.add {
+  margin-top: 30px;
+}
+.form-giftregistry-share .fieldset .fields .actions-toolbar,
+.form-giftregistry-edit .fieldset .fields .actions-toolbar,
+.form-add-invitations .fieldset .fields .actions-toolbar,
+.form-create-return .fieldset .fields .actions-toolbar,
+.form.send.friend .fieldset .fields .actions-toolbar {
+  margin: 0;
+}
+.form-giftregistry-share .additional,
+.form-giftregistry-edit .additional,
+.form-add-invitations .additional,
+.form-create-return .additional,
+.form.send.friend .additional {
+  margin-top: 55px;
+  position: relative;
+}
+.form-giftregistry-share .message.notice,
+.form-giftregistry-edit .message.notice,
+.form-add-invitations .message.notice,
+.form-create-return .message.notice,
+.form.send.friend .message.notice {
+  margin: 30px 0 0;
+}
+
+.abs-add-clearfix:before,
+.abs-add-clearfix:after,
+.abs-add-fields .fieldset .actions-toolbar:before,
+.abs-add-fields .fieldset .actions-toolbar:after,
+.payment-method-braintree .hosted-date-wrap:before,
+.payment-method-braintree .hosted-date-wrap:after,
+.multicheckout .item-options:before,
+.multicheckout .item-options:after,
+.multicheckout .block:before,
+.multicheckout .block:after,
+.multicheckout .block-content:before,
+.multicheckout .block-content:after,
+.bundle-options-container .product-options-wrapper .field.choice .label:before,
+.bundle-options-container .product-options-wrapper .field.choice .label:after,
+.toolbar:before,
+.toolbar:after,
+.sidebar .product-items-images:before,
+.sidebar .product-items-images:after,
+.cart.table-wrapper .actions-toolbar:before,
+.cart.table-wrapper .actions-toolbar:after,
+.cart.table-wrapper .item-options:before,
+.cart.table-wrapper .item-options:after,
+.minicart-items .product-item > .product:before,
+.minicart-items .product-item > .product:after,
+.checkout-container:before,
+.checkout-container:after,
+.checkout-onepage-success:before,
+.checkout-onepage-success:after,
+.opc-estimated-wrapper:before,
+.opc-estimated-wrapper:after,
+.opc-wrapper .field.addresses:before,
+.opc-wrapper .field.addresses:after,
+.page-product-downloadable .product-add-form:before,
+.page-product-downloadable .product-add-form:after,
+.gift-item-block .content:before,
+.gift-item-block .content:after,
+.order-details-items .order-gift-message:before,
+.order-details-items .order-gift-message:after,
+.order-details-items .block-order-details-gift-message:before,
+.order-details-items .block-order-details-gift-message:after,
+.block-giftregistry-shared-items .product .item-options:before,
+.block-giftregistry-shared-items .product .item-options:after,
+.gift-wrapping-list:before,
+.gift-wrapping-list:after,
+.opc-wrapper .data.table .gift-wrapping .content:before,
+.opc-wrapper .data.table .gift-wrapping .content:after,
+.table-order-items .gift-wrapping .content:before,
+.table-order-items .gift-wrapping .content:after,
+.order-options .product:before,
+.order-options .product:after,
+.map-popup .map-info-price:before,
+.map-popup .map-info-price:after,
+.customer-review .product-details:before,
+.customer-review .product-details:after,
+.form-create-return .actions-toolbar:before,
+.form-create-return .actions-toolbar:after,
+.header.content:before,
+.header.content:after,
+.form-giftregistry-share .fieldset .actions-toolbar:before,
+.form-giftregistry-share .fieldset .actions-toolbar:after,
+.form-giftregistry-edit .fieldset .actions-toolbar:before,
+.form-giftregistry-edit .fieldset .actions-toolbar:after,
+.form-add-invitations .fieldset .actions-toolbar:before,
+.form-add-invitations .fieldset .actions-toolbar:after,
+.form-create-return .fieldset .actions-toolbar:before,
+.form-create-return .fieldset .actions-toolbar:after,
+.form.send.friend .fieldset .actions-toolbar:before,
+.form.send.friend .fieldset .actions-toolbar:after {
+  content: '';
+  display: table;
+}
+.abs-add-clearfix:after,
+.abs-add-fields .fieldset .actions-toolbar:after,
+.payment-method-braintree .hosted-date-wrap:after,
+.multicheckout .item-options:after,
+.multicheckout .block:after,
+.multicheckout .block-content:after,
+.bundle-options-container .product-options-wrapper .field.choice .label:after,
+.toolbar:after,
+.sidebar .product-items-images:after,
+.cart.table-wrapper .actions-toolbar:after,
+.cart.table-wrapper .item-options:after,
+.minicart-items .product-item > .product:after,
+.checkout-container:after,
+.checkout-onepage-success:after,
+.opc-estimated-wrapper:after,
+.opc-wrapper .field.addresses:after,
+.page-product-downloadable .product-add-form:after,
+.gift-item-block .content:after,
+.order-details-items .order-gift-message:after,
+.order-details-items .block-order-details-gift-message:after,
+.block-giftregistry-shared-items .product .item-options:after,
+.gift-wrapping-list:after,
+.opc-wrapper .data.table .gift-wrapping .content:after,
+.table-order-items .gift-wrapping .content:after,
+.order-options .product:after,
+.map-popup .map-info-price:after,
+.customer-review .product-details:after,
+.form-create-return .actions-toolbar:after,
+.header.content:after,
+.form-giftregistry-share .fieldset .actions-toolbar:after,
+.form-giftregistry-edit .fieldset .actions-toolbar:after,
+.form-add-invitations .fieldset .actions-toolbar:after,
+.form-create-return .fieldset .actions-toolbar:after,
+.form.send.friend .fieldset .actions-toolbar:after {
+  clear: both;
+}
+
+.abs-action-remove-desktop,
+.abs-add-fields-desktop .fieldset .additional .action.remove,
+.form-giftregistry-share .fieldset .additional .action.remove,
+.form-giftregistry-edit .fieldset .additional .action.remove,
+.form-create-return .fieldset .additional .action.remove,
+.form.send.friend .fieldset .additional .action.remove {
+  margin-left: 90%;
+}
+.abs-add-fields-desktop .fieldset .field .control,
+.form-giftregistry-share .fieldset .field .control,
+.form-giftregistry-edit .fieldset .field .control,
+.form-create-return .fieldset .field .control,
+.form.send.friend .fieldset .field .control {
+  width: auto;
+}
+
+.abs-form-field-column-2 .fieldset .field,
+.form-giftregistry-share .fieldset .field,
+.form-giftregistry-edit .fieldset .field,
+.form-create-return .fieldset .field,
+.form.send.friend .fieldset .field {
+  padding: 0 12px 0 0;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.form-giftregistry-share .fieldset .field:nth-last-child(1),
+.form-giftregistry-share .fieldset .field:nth-last-child(2),
+.form-giftregistry-edit .fieldset .field:nth-last-child(1),
+.form-giftregistry-edit .fieldset .field:nth-last-child(2),
+.form-create-return .fieldset .field:nth-last-child(1),
+.form-create-return .fieldset .field:nth-last-child(2),
+.form.send.friend .fieldset .field:nth-last-child(1),
+.form.send.friend .fieldset .field:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.form.send.friend {
+  width: 60%;
+  margin: 0 auto;
+}
+.form.send.friend .fieldset .field {
+  width: 45%;
+}
+.form.send.friend .fieldset .field.text {
+  width: 90%;
+}
+
+
+
+
+.multicheckout .table-wrapper .col .label, .multicheckout .block .methods-shipping .item-content .fieldset > .legend, .opc-wrapper .form-discount .field .label, .bundle-options-container .block-bundle-summary .product-image-container, .bundle-options-container .block-bundle-summary .product.name, .bundle-options-container .block-bundle-summary .stock, .product-item-actions .actions-secondary > .action span, .special-price .price-label, .table-comparison .cell.label.remove span, .table-comparison .cell.label.product span, .block.related .field.choice .label, .cart.table-wrapper .col.qty .label, .minicart-wrapper .action.showcart .text, .minicart-wrapper .action.showcart .counter-label, .checkout-index-index .page-title-wrapper, .checkout-payment-method .field-select-billing > .label, .checkout-payment-method .payments .legend, .checkout-payment-method .ccard .legend, .fieldset .fullname > .label, .field.street .field.additional .label, .block-balance .balance-price-label, .page-product-downloadable .product-options-wrapper .fieldset .legend.links-title, .page-product-giftcard .fieldset.giftcard > .legend, .opc-wrapper .form-giftcard-account .field .label, .form-add-invitations .fields .label, .filter-options-content .filter-count-label, .table-comparison .wishlist.split.button > .action.split span, .product-items .wishlist.split.button > .action.split span, .page-multiple-wishlist .page-title-wrapper .page-title, .block-wishlist-search-form .form-wishlist-search .fieldset > .legend, .block.newsletter .label, .review-date .review-details-label, .customer-review .product-details .rating-average-label, .block-reorder .product-item .label, .action.skip:not(:focus), .page-header .switcher .label, .page-footer .switcher .label, .products-grid.wishlist .product-item .comment-box .label {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

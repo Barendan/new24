@@ -69,7 +69,7 @@
         height: 6.45833vw;
     }
     .button-c2Action.large .icon {
-        width: 5.20833vw;
+        /*width: 5.20833vw;*/
     }
     .button-c2Action.large .label {
         font-size: .98958vw;

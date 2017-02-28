@@ -8,9 +8,11 @@
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="mage/gallery/gallery.css"/>
+        <css src="css/catalog.css"/>
     </head>
     <update handle="catalog_product_opengraph" />
     <update handle="page_calendar"/>
+
     <body>
         <attribute name="itemtype" value="http://schema.org/Product" />
         <attribute name="itemscope" value="itemscope"/>
@@ -89,6 +91,7 @@
                         <block class="Magento\Catalog\Block\Product\View" name="product.info.mailto" template="product/view/mailto.phtml"/>
                     </container>
                 </container>
+
                 <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.overview" template="product/view/attribute.phtml" group="detailed_info" after="product.info.extrahint">
                     <arguments>
                         <argument name="at_call" xsi:type="string">getShortDescription</argument>
@@ -182,5 +185,9 @@
         <referenceBlock name="product.info.addtocart.additional">
             <block class="Magento\Catalog\Block\ShortcutButtons\InCatalog" name="addtocart.shortcut.buttons.additional"/>
         </referenceBlock>
+
+
+        <move element="page.main.title" destination="header.container"/>
+
     </body>
 </page>

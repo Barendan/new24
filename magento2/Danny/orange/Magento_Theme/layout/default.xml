@@ -9,24 +9,10 @@
         <!-- <script src="js/about.js"/> -->
     </head>
     <body>
-    <!-- DONT WANT ALL THE EXTRA JS ON HOME PAGE (REMOVED BELOW)-->
-        <!-- <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml"/> -->
-
-
+<!-- ========== ANCESTOR OF THIS FILE IS THEME/VIEW/LAYOUT/DEFAULT.XML ======== -->
         <referenceContainer name="header.container">
-            <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
-                <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
-                    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
-                        <arguments>
-                            <argument name="css_class" xsi:type="string">header links</argument>
-                        </arguments>
-                    </block>
-
-                    <referenceBlock name="skip_to_content" remove="true" />
-                    <referenceBlock name="top.links" remove="true"/>
-                    
-                </container>
-            </container>
+            <referenceBlock name="skip_to_content" remove="true" />
+            <referenceBlock name="top.links" remove="true" />
 
             <referenceBlock name="logo">
                 <arguments>
@@ -41,6 +27,7 @@
 
         <referenceContainer name="page.wrapper">
             <referenceContainer name="side.menu">
+                <!-- <block class="Magento\Framework\View\Element\Template" name="menu-icon" template="Magento_Checkout::cart/minicart.phtml" /> -->
                 <block class="Magento\Framework\View\Element\Template" name="menu-icon" template="Magento_Theme::custom/menu_icon.phtml" />
                 <block class="Magento\Framework\View\Element\Template" name="menu-display" template="Magento_Theme::custom/menu_display.phtml" />
             </referenceContainer>
@@ -71,57 +58,17 @@
 
         </referenceContainer>
 
+        <referenceBlock name="store.menu" remove="true"/>
+        <referenceBlock name="catalog.topnav" remove="true"/>
+        <referenceBlock name="store.links" remove="true"/>
+        <referenceBlock name="store.settings" remove="true"/>
+
     <!-- <referenceContainer name="page.top" remove="true"/> -->
     <!-- <referenceContainer name="navigation.sections" remove="true"/> -->
-        <referenceContainer name="page.top">
-            <block class="Magento\Framework\View\Element\Template" name="navigation.sections" before="-" template="Magento_Theme::html/sections.phtml">
-                <arguments>
-                    <argument name="group_name" xsi:type="string">navigation-sections</argument>
-                    <argument name="group_css" xsi:type="string">nav-sections</argument>
-                </arguments>
-                <block class="Magento\Framework\View\Element\Template" name="store.menu" group="navigation-sections" template="Magento_Theme::html/container.phtml">
-                    <arguments>
-                        <argument name="title" translate="true" xsi:type="string">Menu</argument>
-                    </arguments>
-                    <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="html/topmenu.phtml" ttl="3600" before="-"/>
-                </block>
-                <block class="Magento\Framework\View\Element\Text" name="store.links" group="navigation-sections">
-                    <arguments>
-                        <argument name="title" translate="true" xsi:type="string">Account</argument>
-                        <argument name="use_force" xsi:type="boolean">true</argument>
-                        <argument name="text" xsi:type="string"><![CDATA[<!-- Account links -->]]></argument>
-                    </arguments>
-                </block>
-                <block class="Magento\Framework\View\Element\Template" name="store.settings" group="navigation-sections" template="Magento_Theme::html/container.phtml">
-                    <arguments>
-                        <argument name="title" translate="true" xsi:type="string">Settings</argument>
-                    </arguments>
-                    <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="switch/languages.phtml">
-                        <arguments>
-                            <argument name="id_modifier" xsi:type="string">nav</argument>
-                        </arguments>
-                    </block>
-                    <block class="Magento\Directory\Block\Currency" name="store.settings.currency" template="currency.phtml">
-                        <arguments>
-                            <argument name="id_modifier" xsi:type="string">nav</argument>
-                        </arguments>
-                    </block>
-                </block>
-            </block>
-
-            <container name="top.container" as="topContainer" label="After Page Header Top" htmlTag="div" htmlClass="top-container"/>
-            <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
-        </referenceContainer>
-
 
         <!-- <referenceBlock name="catalog.topnav"  remove="true"/> -->
-        <move element="minicart" destination="ves_header" remove="true"/>
+        <move element="minicart" destination="side.menu" />
         <move element="top.search" destination="ves_header" remove="true"/>
-
-        <!-- TAKEN FROM LUMA LAYOUT/DEFAULT.XML -->
-        <!-- <move element="store_switcher" destination="orange_header" />    -->
-        <!-- <referenceBlock name="report.bugs" remove="true"/> -->
-
 
     </body>
 </page>

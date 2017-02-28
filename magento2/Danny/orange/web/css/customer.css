@@ -189,6 +189,15 @@ form {
     padding-left: 15%;
 }
 
+.actions-toolbar:after {
+    clear: both;
+}
+
+.actions-toolbar:before, .actions-toolbar:after {
+    content: '';
+    display: table;
+}
+
 .action.primary {
     background-image: none;
     background: #ff9635;
@@ -427,24 +436,3 @@ textarea {
 
 
 /*====================================*/
-.actions-toolbar:after {
-    clear: both;
-}
-
-.actions-toolbar:before, .actions-toolbar:after {
-    content: '';
-    display: table;
-}
-
-.abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
-    content: '';
-    display: table;
-}
-
-.abs-add-clearfix-desktop:after, .paypal-review .block-content:after, .paypal-review-discount:after, .order-review-form:after, .block-cart-failed .block-content:after, .cart-container:after, .login-container:after, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:after, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:after, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:after, .header.content:after {
-    clear: both;
-}
-.abs-add-clearfix-desktop:before, .abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
-    content: '';
-    display: table;
-}

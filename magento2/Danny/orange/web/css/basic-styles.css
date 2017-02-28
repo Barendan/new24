@@ -1,0 +1,214 @@
+/* BASIC STYLES FOR ALL PAGES */
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size-adjust: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /*background-color: #f6f7ff;*/
+    color: #9296ab;
+    margin: 0;
+}
+
+.base {
+    font-size: 60px !important;
+    color: orange;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+.page {
+    margin: 0 auto;
+    width: 72.5%
+}
+.page {
+    max-width: 1210px;
+    max-width: 63.0209vw;
+    width: 63.02083vw;
+}
+.page-title-wrapper {
+    text-align:center;
+}
+.page-wrapper {
+    box-sizing: border-box;
+    padding: 8px;
+    overflow: hidden;
+}
+/*.page-layout-2columns-left .column.main {
+    width: 79.16666667%;
+    float: right;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}*/
+#feature-page {
+    padding-top: 25vw;
+    padding-bottom: 37.03704vw;
+}
+
+
+
+.columns {
+    margin: 2% 17%;
+}
+.column.main {
+    min-height: 300px;
+}
+.columns .column.main {
+    padding-bottom: 40px;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    width: 100%;
+}
+
+.account .messages {
+    margin-bottom: 20px;
+}
+.loggedout-text {
+    font-size: 1.6rem;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/*====================================*/
+        /*FONT STYLE DEMO*/
+
+@font-face {
+    font-family: 'luma-icons';
+    src: url('../fonts/Luma-Icons.eot');
+    src: url('../fonts/Luma-Icons.eot?#iefix') format('embedded-opentype'), url('../fonts/Luma-Icons.woff2') format('woff2'), url('../fonts/Luma-Icons.woff') format('woff'), url('../fonts/Luma-Icons.ttf') format('truetype'), url('../fonts/Luma-Icons.svg#luma-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo/Arvo-Bold.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Droid';
+    src: url('../fonts/Droid_Serif/DroidSerif-Bold.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'PT';
+    src: url('../fonts/PT_Serif/PT_Serif-Web-Bold.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Bungee';
+    src: url('../fonts/Bungee_Shade/BungeeShade-Regular.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Eskimo';
+    src: url('../fonts/Baby_Eskimo_Kisses.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Corben';
+    src: url('../fonts/Corben-Bold.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Digital';
+    src: url('../fonts/Digitalt.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+@font-face {
+    font-family: 'Arista';
+    src: url('../fonts/Arista2_0Alternate.ttf');
+    /*font-weight: 300;*/
+    /*font-style: normal*/
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/light/opensans-300.eot');
+  src: url('../fonts/opensans/light/opensans-300.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/light/opensans-300.woff2') format('woff2'), url('../fonts/opensans/light/opensans-300.woff') format('woff'), url('../fonts/opensans/light/opensans-300.ttf') format('truetype'), url('../fonts/opensans/light/opensans-300.svg#Open Sans') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/regular/opensans-400.eot');
+  src: url('../fonts/opensans/regular/opensans-400.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/regular/opensans-400.woff2') format('woff2'), url('../fonts/opensans/regular/opensans-400.woff') format('woff'), url('../fonts/opensans/regular/opensans-400.ttf') format('truetype'), url('../fonts/opensans/regular/opensans-400.svg#Open Sans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/semibold/opensans-600.eot');
+  src: url('../fonts/opensans/semibold/opensans-600.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/semibold/opensans-600.woff2') format('woff2'), url('../fonts/opensans/semibold/opensans-600.woff') format('woff'), url('../fonts/opensans/semibold/opensans-600.ttf') format('truetype'), url('../fonts/opensans/semibold/opensans-600.svg#Open Sans') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/bold/opensans-700.eot');
+  src: url('../fonts/opensans/bold/opensans-700.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/bold/opensans-700.woff2') format('woff2'), url('../fonts/opensans/bold/opensans-700.woff') format('woff'), url('../fonts/opensans/bold/opensans-700.ttf') format('truetype'), url('../fonts/opensans/bold/opensans-700.svg#Open Sans') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+/*    font-family: 'Arvo', serif !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-family: 'Droid', serif !important;
+    font-family: 'PT', serif !important;
+    font-family: 'Eskimo', sans-serif !important;
+    font-family: 'Corben', sans-serif !important;
+    font-family: 'Digital', sans-serif !important;*/
+}
+
+p {
+    /*font-family: 'Arvo', serif !important;*/
+    /*font-family: 'Ubuntu', sans-serif !important;*/
+    /*font-family: 'Droid', serif !important;*/
+    /*font-family: 'PT', serif !important;*/
+    font-family: 'Josefin', sans-serif !important;
+/*    font-family: 'Bungee', sans-serif !important;
+    font-family: 'Eskimo', sans-serif !important;
+    font-family: 'Corben', sans-serif !important;
+    font-family: 'Digital', sans-serif !important;*/
+}
+
+.font1 {
+    font-family: 'Bungee', sans-serif !important;
+}
+.font2 {
+    font-family: 'Josefin', sans-serif !important;
+}
+
+/*====================================*/

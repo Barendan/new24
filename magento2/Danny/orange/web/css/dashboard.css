@@ -1,34 +1,4 @@
 
-.message.info {
-    margin: 0 0 10px;
-    padding: 12px 20px 12px 25px;
-    display: block;
-    font-size: 1.3rem;
-    background: #fdf0d5;
-    color: #6f4400;
-    padding-left: 45px;
-    position: relative;
-}
-
-.message.info > *:first-child:before {
-    -webkit-font-smoothing: antialiased;
-    font-size: 24px;
-    line-height: 24px;
-    color: #c07600;
-    content: '\e602';
-    font-family: 'luma-icons';
-    margin: -12px 0 0;
-    vertical-align: middle;
-    display: inline-block;
-    font-weight: normal;
-    overflow: hidden;
-    speak: none;
-    left: 0;
-    top: 22px;
-    width: 45px;
-    position: absolute;
-    text-align: center;
-}
 .actions-toolbar > .secondary .action.back {
   display: none;
 }
@@ -249,7 +219,7 @@ textarea {
 }
 .account.page-layout-2columns-left .column.main {
     width: 73%;
-    /*margin-top: 5.1%;*/
+    margin-top: 5.1%;
 }
 
 /*.columns .column.main {
@@ -397,6 +367,10 @@ ul > li, ol > li {
   display: block;
   margin: 10px 1.8rem;
 }
+.block-collapsible-nav .red a:hover {
+  background: rgba(255, 0, 0, 0.8) !important;
+  color: black;
+}
 
 
 .block-collapsible-nav {
@@ -483,9 +457,6 @@ ul > li, ol > li {
 }
 .product-item {
     vertical-align: top;
-}
-.abs-field-date .control, .abs-field-tooltip, .columns .column.main, .columns .sidebar-main, .columns .sidebar-additional, .column .block-addbysku .sku, .product-item, .sidebar .product-items-images .product-item, .search-autocomplete, .cart-summary, .opc-wrapper .shipping-address-item, .shipping-policy-block.field-tooltip .field-tooltip-content, .opc-block-summary, .block-event .slider-panel .slider .item .action.show, .sidebar .block-addbysku .fieldset .fields .field.sku, .form.search.advanced .fields.range .field.date .control, .field .control._with-tooltip, .form-giftregistry-edit .field.date .control {
-    box-sizing: border-box;
 }
 
 .block-compare .product-item .product-item-name {
@@ -619,10 +590,6 @@ p {
     float: right;
 }
 
-
-
-
-
 .actions-toolbar:after {
     clear: both;
 }
@@ -632,18 +599,6 @@ p {
     display: table;
 }
 
-.abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
-    content: '';
-    display: table;
-}
-.abs-add-clearfix-desktop:before, .abs-add-clearfix-desktop:after, .paypal-review .block-content:before, .paypal-review .block-content:after, .paypal-review-discount:before, .paypal-review-discount:after, .order-review-form:before, .order-review-form:after, .block-cart-failed .block-content:before, .block-cart-failed .block-content:after, .cart-container:before, .cart-container:after, .login-container:before, .login-container:after, .account .page-title-wrapper:before, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:before, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:before, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:before, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:before, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:before, .data.table .gift-wrapping .content:after, .block-wishlist-management:before, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:before, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:before, .order-links:after, .account .column.main .block.block-order-details-view:before, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:before, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:before, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:before, .page-header .header.panel:after, .header.content:before, .header.content:after {
-    content: '';
-    display: table;
-}
-
-.abs-add-clearfix-desktop:after, .paypal-review .block-content:after, .paypal-review-discount:after, .order-review-form:after, .block-cart-failed .block-content:after, .cart-container:after, .login-container:after, .account .page-title-wrapper:after, .account .column.main .block:not(.widget) .block-content:after, .block-addresses-list .items.addresses:after, .block-giftregistry-shared .item-options:after, .data.table .gift-wrapping .nested:after, .data.table .gift-wrapping .content:after, .block-wishlist-management:after, .magento-rma-guest-returns .column.main .block.block-order-details-view:after, .order-links:after, .account .column.main .block.block-order-details-view:after, [class^='sales-guest-'] .column.main .block.block-order-details-view:after, .sales-guest-view .column.main .block.block-order-details-view:after, .page-header .header.panel:after, .header.content:after {
-    clear: both;
-}
 
 .abs-add-box-sizing-desktop,
 .abs-shopping-cart-items-desktop,
@@ -677,18 +632,6 @@ p {
     width: 48%;
 }*/
 
-
-
-
-
-
-@font-face {
-    font-family: 'luma-icons';
-    src: url('../fonts/Luma-Icons.eot');
-    src: url('../fonts/Luma-Icons.eot?#iefix') format('embedded-opentype'), url('../fonts/Luma-Icons.woff2') format('woff2'), url('../fonts/Luma-Icons.woff') format('woff'), url('../fonts/Luma-Icons.ttf') format('truetype'), url('../fonts/Luma-Icons.svg#luma-icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .fieldset {
     border: 0;
