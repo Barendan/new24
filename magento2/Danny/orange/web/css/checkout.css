@@ -8,9 +8,13 @@ body {
     font-size: 1.4rem;
 }
 
-.checkout-container {
-    margin: 0 0 20px;
+.checkout-index-index .columns {
+    margin: 2% 10% 2% 15% !important;
 }
+
+/*.checkout-container {
+    margin: 0 0 20px;
+}*/
 
 
 .abs-add-clearfix:before, .abs-add-clearfix:after, .abs-add-fields .fieldset .actions-toolbar:before, .abs-add-fields .fieldset .actions-toolbar:after, .payment-method-braintree .hosted-date-wrap:before, .payment-method-braintree .hosted-date-wrap:after, .multicheckout .item-options:before, .multicheckout .item-options:after, .multicheckout .block:before, .multicheckout .block:after, .multicheckout .block-content:before, .multicheckout .block-content:after, .bundle-options-container .product-options-wrapper .field.choice .label:before, .bundle-options-container .product-options-wrapper .field.choice .label:after, .toolbar:before, .toolbar:after, .sidebar .product-items-images:before, .sidebar .product-items-images:after, .cart.table-wrapper .actions-toolbar:before, .cart.table-wrapper .actions-toolbar:after, .cart.table-wrapper .item-options:before, .cart.table-wrapper .item-options:after, .minicart-items .product-item > .product:before, .minicart-items .product-item > .product:after, .checkout-container:before, .checkout-container:after, .checkout-onepage-success:before, .checkout-onepage-success:after, .opc-estimated-wrapper:before, .opc-estimated-wrapper:after, .opc-wrapper .field.addresses:before, .opc-wrapper .field.addresses:after, .page-product-downloadable .product-add-form:before, .page-product-downloadable .product-add-form:after, .gift-item-block .content:before, .gift-item-block .content:after, .order-details-items .order-gift-message:before, .order-details-items .order-gift-message:after, .order-details-items .block-order-details-gift-message:before, .order-details-items .block-order-details-gift-message:after, .block-giftregistry-shared-items .product .item-options:before, .block-giftregistry-shared-items .product .item-options:after, .gift-wrapping-list:before, .gift-wrapping-list:after, .opc-wrapper .data.table .gift-wrapping .content:before, .opc-wrapper .data.table .gift-wrapping .content:after, .table-order-items .gift-wrapping .content:before, .table-order-items .gift-wrapping .content:after, .order-options .product:before, .order-options .product:after, .map-popup .map-info-price:before, .map-popup .map-info-price:after, .customer-review .product-details:before, .customer-review .product-details:after, .form-create-return .actions-toolbar:before, .form-create-return .actions-toolbar:after, .header.content:before, .header.content:after, .form-giftregistry-share .fieldset .actions-toolbar:before, .form-giftregistry-share .fieldset .actions-toolbar:after, .form-giftregistry-edit .fieldset .actions-toolbar:before, .form-giftregistry-edit .fieldset .actions-toolbar:after, .form-add-invitations .fieldset .actions-toolbar:before, .form-add-invitations .fieldset .actions-toolbar:after, .form-create-return .fieldset .actions-toolbar:before, .form-create-return .fieldset .actions-toolbar:after, .form.send.friend .fieldset .actions-toolbar:before, .form.send.friend .fieldset .actions-toolbar:after {
@@ -20,7 +24,7 @@ body {
 
 .authentication-wrapper {
     float: right;
-    margin-top: -60px;
+    /*margin-top: -60px;*/
     max-width: 50%;
     position: relative;
     z-index: 1;
@@ -313,7 +317,7 @@ article, aside, details, figcaption, figure, main, footer, header, nav, section,
     box-sizing: border-box;
 }
 .opc-wrapper {
-    width: 66.66666667%;
+    width: 55%;
     float: left;
     -ms-flex-order: 1;
     -webkit-order: 1;
@@ -709,8 +713,7 @@ input[type="radio"] {
 
 .opc-sidebar {
     margin: 46px 0 20px;
-    /*width: 33.33333333%;*/
-    width: 33%; /* Reduced to enable a border */
+    width: 38%;
     float: right;
     -ms-flex-order: 2;
     -webkit-order: 2;
@@ -718,7 +721,7 @@ input[type="radio"] {
 }
 
 .opc-block-summary {
-    background: #f5f5f5;
+    background: #f9f9f9;
     margin: 0 0 20px;
     padding: 22px 30px;
     border: 1px solid black;

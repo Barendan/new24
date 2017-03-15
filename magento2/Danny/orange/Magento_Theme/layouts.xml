@@ -30,4 +30,7 @@
     <layout id="about">
         <label translate="true">About</label>
     </layout>
+    <layout id="vendor">
+        <label translate="true">Vendor</label>
+    </layout>
 </page_layouts>

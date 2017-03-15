@@ -3,7 +3,7 @@
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <update handle="basic"/>
 <!-- TAKEN FROM BASE EMPTY.XML -->
-    <referenceContainer name="after.body.start" remove="true" />
+    <!-- <referenceContainer name="after.body.start" remove="true" /> -->
     <referenceContainer name="page.wrapper">
         <container name="feature.page" as="feature_page" label="Feature Page" htmlTag="div" htmlClass="page" htmlId="feature-page" after="global.notices">
             <container name="section-1" label="Section 1" htmlTag="section" htmlClass="page-section" htmlId="section-1"/>
@@ -12,5 +12,12 @@
         </container>
     </referenceContainer>
 
-    <referenceContainer name="main.content" remove="true" />
+    <!-- <referenceContainer name="main.content" remove="true" /> -->
+    <referenceContainer name="columns.top" remove="true" />
+    <referenceContainer name="content.top" remove="true" />
+    <referenceContainer name="content.aside" remove="true" />
+    <referenceContainer name="content.bottom" remove="true" />
+    <!-- THIS PART RESPONSIBLE FOR TEXT INSIDE EMPTY CARD  (BELOW) -->
+    <!-- <referenceContainer name="content" remove="true" /> -->
+
 </layout>

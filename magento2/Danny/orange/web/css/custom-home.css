@@ -22,6 +22,19 @@ h1+hr, h2+hr {
 hr, input[type=search] {
     box-sizing: content-box;
 }
+h1+hr {
+    width: 34px;
+    min-height: 5px;
+    height: .36458vw;
+    margin-bottom: 1.66667vw;
+}
+h2+hr {
+    width:26px;
+    min-height: 3px;
+    height: .26042vw;
+    margin-bottom: .9375vw
+}
+
 /*REMOVED H2:CONFLICT W/ INGREDIENTS*/
 /*MAKE IT MORE SPECIFIC TO THE PAGE YOU NEED IT ON*/
 h1, h3, h4, h5, h6 {
@@ -29,15 +42,34 @@ h1, h3, h4, h5, h6 {
     color: #2d2b51;
     text-transform: uppercase;
 }
-.feature-page p {
-    margin-top: 0;
-    margin-bottom: 11.11111vw;
-    line-height: 1.8;
+/*head { 
+    display: block;
 }
-head { 
-	display: block;
+*/
+
+
+
+
+
+.page-main {
+    display: none;
+}
+.page {
+    max-width:1210px;
+    max-width: 63.0209vw;
+    width: 63.02083vw;
+}
+.page .copyright-container {
+    bottom: 1.875vw;
+    left: 2.1875vw;
 }
 
+
+.feature-page p {
+    margin-top: 0;
+    margin-bottom: 3.125vw;
+    line-height: 1.8;
+}
 
 .section-inner.left { float: left; }
 .section-inner.left.showcase { width: 64.07407vw; }
@@ -83,7 +115,7 @@ head {
     position: relative;
     left: 100px;
     width: 110%;
-    transform:scaleX(-1);
+    /*transform:scaleX(-1);*/
 }
 
 .fruit {
@@ -120,7 +152,7 @@ head {
 }
 #cc {
     top: 54vh;
-    left: -5vw;
+    left: -1.5vw;
     height: 30vh;    
     width: 25vw;
 	background: url(../images/coconut.png);
@@ -181,14 +213,15 @@ head {
 	color: #2d2b51;
     /*height: 1px;*/
 }
+
 #mini {
 	background-color: white;
 	position: absolute;
-	width: 60px;
+	width: 100px;
 	height: 60px;
 	border-radius: 50px;
 	border: 1px solid grey;
-	opacity: 0.7;
+	/*opacity: 0.7;*/
 	overflow: hidden;
 }
 #mini:hover {
@@ -244,11 +277,11 @@ head {
 	top: 200px;
 	left: 790px;
 }
-.al img {
+/*.al img {
 	position: relative;
 	top: 7px;
 	width: 25px !important;
-}
+}*/
 
 
 #feature-page .wave {
@@ -280,7 +313,7 @@ head {
 
 #feature-page #section-3 {
     min-height: 720px; 
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
     /*margin-bottom: 9.25926vw*/
 }
 #section-3 p {
@@ -295,20 +328,48 @@ head {
 }
 
 .sticker {
-    width: 200px;
-    height: 200px;
-    padding-top: 10px;
-    padding-left: 50px;
+    width: 300px;
+    height: 300px;
+    padding-top: 30%;
+    padding-left: 10%;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition:         transform .5s ease-in-out;
 }
-.sticker:hover {
+/*.sticker:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-}
+}*/
+
 .hide {
     visibility: hidden;
 }
+
+.sticker-small {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*padding-top: 10px;*/
+    /*padding-left: 50px;*/
+}
+
+.f { 
+    top:100px;
+    left:300px;
+}
+.s { 
+    top:200px;
+    padding-top:10px;
+}
+.t { 
+    top:300px;
+    padding-top:30px;
+}
+.z { 
+    top:400px;
+    left:300px;
+    padding-top:40px;
+}
+
 
 .finale {
     position: absolute;
@@ -388,6 +449,8 @@ head {
 .button-c2Action.large .label strong {
     font-size: 2.96296vw
 }
+
+
 .wcart, .wfoods {
 /*    position: relative;
     top: 20px;
@@ -398,4 +461,3 @@ head {
     width: 50px;
     height: 50px;
 }
-

@@ -1,0 +1,82 @@
+<h1>Work With Us</h1>
+
+<div class="full-contact">
+
+  <div class="cform">
+
+    <p>
+      Our primary goal is to spread the health. If you're looking for bulk options, to become an affiliate or simply good pricing. You came to the right place. We stand by our product, ensuring only the best ingredients go into it. Together, we can make the world a healthier place. <br>
+    <br><br>
+      <span class="please">Please fill out the form and we will respond to you within 24 hours.</span>
+    </p>
+
+    <form class="form contact"
+      action="<?php echo $block->escapeUrl($block->getFormAction()); ?>"
+      id="contact-form"
+      class="contact-form"
+      method="post"
+      data-hasrequired="<?php echo $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation":{}}'>            
+      
+      <div id="contactFormWrapper">
+          <select id="contactFormCategory" name="contact[category]" class="gradbtn">
+            <option selected="selected"> Select category</option>
+            <option>Shipping</option>
+            <option>Resellers</option>
+            <option>Partnerships</option>
+            <option value="Become a Distributor">Distributor Inquiry</option>
+            <option>Other</option>
+          </select>
+
+          <input name="name" id="name" title="<?php echo $block->escapeHtmlAttr(__('Full Name')) ?>" value="<?php echo $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('name') ?: $this->helper('Magento\Contact\Helper\Data')->getUserName()) ?>" class="field input-text" type="text" data-validate="{required:true}" placeholder="First and Last Name"/>
+
+          <input name="email" id="email" title="<?php echo $block->escapeHtmlAttr(__('Email')) ?>" value="<?php echo $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('email') ?: $this->helper('Magento\Contact\Helper\Data')->getUserEmail()) ?>" class="field input-text" type="email" data-validate="{required:true, 'validate-email':true}" placeholder="Email Address"/>
+
+          <input name="telephone" id="telephone" title="<?php echo $block->escapeHtmlAttr(__('Phone Number')) ?>" value="<?php echo $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('telephone')) ?>" class="field input-text" type="text" placeholder="Phone Number" />
+
+          <textarea name="comment" id="comment" title="<?php echo $block->escapeHtmlAttr(__('What’s on your mind?')) ?>" class="field input-text" cols="10" rows="5" placeholder="" data-validate="{required:true}">
+            <?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('comment')) ?>
+          </textarea>
+
+          <?php echo $block->getChildHtml('form.additional.info'); ?>
+          <input type="hidden" name="hideit" id="hideit" value="" />
+          <button type="submit" title="<?php echo $block->escapeHtmlAttr(__('Submit')) ?>" class="action submit primary subzero">
+              <span><?php echo $block->escapeHtml(__('SEND')) ?></span>
+          </button>
+      </div>
+      
+    </form>
+  </div>
+
+
+
+
+ <!--  <aside class="cinfo">
+    <span class="greyback">
+      <p>We are here to answer any questions you may have about your 24-Hour Health experiences. Reach out to us and we'll respond as soon as we can. </p>
+      <br>
+      <p>Even if there is something you have always wanted to experience and can't find it on combadi, let us know and we promise we'll do our best to find it for you and send you there. </p>
+    </span>
+    <br>
+    <div class="address">
+      <span class="miniheader">Address :</span>
+      <p>Richbody Inc.<br>
+      6250 N Military Trl.<br>
+      Suite #204<br>
+      West Palm Beach, FL 33407</p>
+    </div>
+
+    <span class="miniheader">Email :</span>
+    <p>main@richbody.com</p>
+    <br>
+
+    <span class="miniheader">Phone :</span>
+    <p>1-844-RICH-BODY</p>
+    <br>
+  </aside> -->
+
+
+
+
+
+</div>

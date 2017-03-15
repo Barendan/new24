@@ -436,3 +436,64 @@ textarea {
 
 
 /*====================================*/
+/*====== PASSWORD STRENGTH =========*/
+
+.field.password .control {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.field.password .control .mage-error {
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+}
+.field.password .control .input-text {
+  -ms-flex-order: 0;
+  -webkit-order: 0;
+  order: 0;
+  z-index: 2;
+}
+.password-strength-meter {
+  background-color: #f4f4f4;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 9px;
+  position: relative;
+  z-index: 1;
+}
+.password-strength-meter:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.password-none .password-strength-meter:before {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.password-weak .password-strength-meter:before {
+  background-color: #ffafae;
+  width: 25%;
+}
+.password-medium .password-strength-meter:before {
+  background-color: #ffd6b3;
+  width: 50%;
+}
+.password-strong .password-strength-meter:before {
+  background-color: #c5eeac;
+  width: 75%;
+}
+.password-very-strong .password-strength-meter:before {
+  background-color: #81b562;
+  width: 100%;
+}
+
+
+
+

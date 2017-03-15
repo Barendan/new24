@@ -1,5 +1,6 @@
 /* BASIC STYLES FOR ALL PAGES */
 
+
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
@@ -25,7 +26,6 @@ body {
     font-weight: 300;
 }
 
-
 .page {
     margin: 0 auto;
     width: 72.5%
@@ -43,23 +43,18 @@ body {
     padding: 8px;
     overflow: hidden;
 }
-/*.page-layout-2columns-left .column.main {
-    width: 79.16666667%;
-    float: right;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 2;
-}*/
-#feature-page {
-    padding-top: 25vw;
-    padding-bottom: 37.03704vw;
-}
+
+
 
 
 
 .columns {
     margin: 2% 17%;
 }
+.catalog-product-view .columns {
+    margin: 2% 13% !important;
+}
+
 .column.main {
     min-height: 300px;
 }
@@ -73,6 +68,17 @@ body {
     -webkit-order: 1;
     order: 1;
     width: 100%;
+}
+.columns {
+    display: block;
+}
+.columns {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .account .messages {

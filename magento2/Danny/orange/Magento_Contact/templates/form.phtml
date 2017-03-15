@@ -38,7 +38,7 @@
 
           <input name="telephone" id="telephone" title="<?php echo $block->escapeHtmlAttr(__('Phone Number')) ?>" value="<?php echo $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('telephone')) ?>" class="field input-text" type="text" placeholder="Phone Number" />
 
-          <textarea name="comment" id="comment" title="<?php echo $block->escapeHtmlAttr(__('What’s on your mind?')) ?>" class="field input-text" cols="10" rows="8" placeholder="Your message here" data-validate="{required:true}">
+          <textarea name="comment" id="comment" title="<?php echo $block->escapeHtmlAttr(__('What’s on your mind?')) ?>" class="field input-text" cols="10" rows="8" placeholder="" data-validate="{required:true}">
             <?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('comment')) ?>
           </textarea>
 
@@ -53,25 +53,27 @@
   </div>
 
   <aside class="cinfo">
-    <p>We are here to answer any questions you may have about your 24-Hour Health experiences. Reach out to us and we'll respond as soon as we can. </p>
-    <br>
-    <p>Even if there is something you have always wanted to experience and can't find it on combadi, let us know and we promise we'll do our best to find it for you and send you there. </p>
-    <br><hr><br>
-
+    <span class="greyback">
+      <p class="instructional">We are here to answer any questions you may have about your 24-Hour Health experiences. Reach out to us and we'll respond as soon as we can. </p>
+      <br>
+      <p class="instructional">Even if there is something you have always wanted to experience and can't find it on combadi, let us know and we promise we'll do our best to find it for you and send you there. </p>
+    </span>
+    <hr>
+    <br><br>
     <div class="address">
       <span class="miniheader">Address :</span>
-      <p>Richbody Inc.<br>
+      <p class="deets">Richbody Inc.<br>
       6250 N Military Trl.<br>
       Suite #204<br>
       West Palm Beach, FL 33407</p>
     </div>
 
     <span class="miniheader">Email :</span>
-    <p>main@richbody.com</p>
+    <p class="deets">main@richbody.com</p>
     <br>
 
     <span class="miniheader">Phone :</span>
-    <p>1-844-RICH-BODY</p>
+    <p class="deets">1-844-RICH-BODY</p>
     <br>
 
 

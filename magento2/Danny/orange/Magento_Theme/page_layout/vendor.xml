@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="basic"/>
+
+    <referenceContainer name="page.wrapper">
+        <container name="vendor.page" as="vendor_page" label="vendor Page" htmlTag="div" htmlClass="page" htmlId="vendor-page" after="global.notices" />
+    </referenceContainer>
+    
+    <referenceContainer name="main.content" remove="true" />
+
+</layout>

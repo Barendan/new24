@@ -5,9 +5,8 @@
 
     <referenceContainer name="page.wrapper">
         <container name="blog.page" as="blog_page" label="Blog Page" htmlTag="div" htmlClass="page" htmlId="blog-page" after="global.notices" />
-            <!-- <container name="blog.page" as="blog_page" label="Blog Page" htmlTag="div" htmlClass="blog" htmlId="blog-page" after="global.notices" /> -->
-        <!-- </container> -->
-        <referenceContainer name="main.content" remove="true" />
     </referenceContainer>
 
+    <referenceContainer name="main.content" remove="true" />
+    
 </layout>

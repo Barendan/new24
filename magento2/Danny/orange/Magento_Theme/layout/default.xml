@@ -56,6 +56,10 @@
                 <block class="Magento\Framework\View\Element\Template" name="about" template="Magento_Theme::custom/about.phtml" />
             </referenceContainer>
 
+            <referenceContainer name="vendor.page">
+                <block class="Magento\Framework\View\Element\Template" name="vendor" template="Magento_Theme::custom/vendor.phtml" />
+            </referenceContainer>
+
         </referenceContainer>
 
         <referenceBlock name="store.menu" remove="true"/>
@@ -67,7 +71,8 @@
     <!-- <referenceContainer name="navigation.sections" remove="true"/> -->
 
         <!-- <referenceBlock name="catalog.topnav"  remove="true"/> -->
-        <move element="minicart" destination="side.menu" />
+        <move element="minicart" destination="page.wrapper" />
+        <!-- <move element="minicart" destination="side.menu" /> -->
         <move element="top.search" destination="ves_header" remove="true"/>
 
     </body>

@@ -1,15 +1,16 @@
 
 @media (min-width: 1024px) {
-/*    :root {
-        font-size: 16px;
-    }*/
-    body {
-        /*font-size: 1vw;*/
-    }
     h1 {
         margin-bottom: 1.30208vw;
         font-size: 3.125vw;
         /*margin: .66667em 0;*/
+    }
+    .checkout-success h1 {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.1;
+        margin-bottom: 3.30208vw !important;
+        margin-top: 0px;
     }
     
     h2 {

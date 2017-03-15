@@ -1,0 +1,138 @@
+
+
+p {
+    padding: 0px ;
+    margin: 0px ;
+}
+
+#vendor-page h1 {
+    text-align: center;
+    font-size: 60px !important;
+    color: orange;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 27px !important;
+}
+#vendor-page p {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 10px 10px 10px;
+    color: orange;
+}
+
+.page {
+    width: 1210px !important;
+    max-width: 81vw !important;
+}
+
+.full-contact {
+    background-image: url(../images/stock2.png);
+    background-size: 800px 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.cform {
+    width: 33%;
+    height: auto;
+    float: right;
+    background-color: white;
+    opacity: 0.98;
+	padding: 20px;
+	border-radius: 8px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
+}
+
+.please {
+    font-size: 12px;
+}
+
+.cinfo {
+	width: 50%;
+	height: auto;
+    /*float: left;*/
+	float: right;
+}
+.address {
+    /*width: 45%;*/
+    /*height: auto;*/
+    float: right;
+}
+
+textarea {
+    background: #ffffff;
+    background-clip: padding-box;
+    color: black !important;
+
+    border: 1px solid #c2c2c2;
+    border-radius: 1px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: auto;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 10px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#contactFormWrapper input {
+    margin-bottom: 10px;
+}
+
+.gradbtn {
+	width: 440px;
+    max-width: 100%;
+    border: 1px solid #dedede;
+    font-size: 18px;
+    color: #908e91;
+    font-family: 'ProximaNovaLight';
+    text-align-left: center;
+
+    padding:15px 0px 15px 20px;
+    margin-bottom: 10px;
+    height: auto;
+    border-radius: 8px;
+	box-shadow: 0 -3px 2px -1px #dedede inset;
+    border-bottom: 1px solid #d3d3d3;
+
+	/*background: url();*/
+    background: -moz-linear-gradient(top, #fbfbfb 0%, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#dedede));
+    background: -webkit-linear-gradient(top, #fbfbfb 0%,#dedede 100%); 
+    background: -o-linear-gradient(top, #fbfbfb 0%,#dedede 100%);
+    background: -ms-linear-gradient(top, #fbfbfb 0%,#dedede 100%);
+    background: linear-gradient(to bottom, #fbfbfb 0%,#dedede 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#dedede',GradientType=0 );
+}
+
+.subzero {
+    background-color: #fb9e49;
+    border: 2px outset #f7631d;
+    border-radius: 10px;
+    font-size: 16px;
+	/*font-family: soleto,sans-serif;*/
+	color: white;
+    padding: 10px 20px;
+    margin-left: 24%;
+    width: 200px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.subzero:hover {
+    background-color: #ea7000;
+	border: 2px inset #9a9a9a;
+	/*opacity: 0.8;*/
+    cursor: pointer;
+}
+/*==========*/
+
+._keyfocus *:focus, input:not([disabled]):focus, textarea:not([disabled]):focus, select:not([disabled]):focus {
+    box-shadow: 0 0 3px 1px #68a8e0;
+}
